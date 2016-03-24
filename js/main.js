@@ -34,25 +34,34 @@
 // var pizza;
 
 // var useranswer;
+
 /*  ASSIGNMENT FROM TYLER  there was a LOT of trial and error.  This is only showing what actually worked.  */
 
 /*
-var useranswer = prompt("What would you like to eat?");
+var ball,
+	typeOfBall;
 
-// var lunch = function(useranswer){
-if (useranswer == "sandwich"){
-	console.log("Sounds goood to me, let's eat!");
-} else if (useranswer == "taco"){
-	console.log("You bet!");
-} else if (useranswer == "pizza"){
-	console.log("It's not that I don't like pizza, but I'm in the mood for either a taco, or a sandwich.");
+ball = prompt("Whant to play ball, yes or no?");
+ball = ball.toLowerCase();
+
+if (ball == "yes"){
+	typeOfBall = prompt("Basketball or Baseball?");
+	typeOfBall = typeOfBall.toLowerCase();
+	if (typeOfBall == "basketball"){
+		game = prompt("One on One or Horse?")
+		game = game.toLowerCase();
+		if (game == "one on one"){
+			confirm("Let's flip a coin to see who goes first!");
+		} else {
+			confirm("Game on!");
+		}
+	} else if (typeOfBall == "baseball"){
+		confirm("Let's play catch!");
+	}
 } else {
-	console.log("I'm not sure what you mean.");
-}
+	confirm("Maybe next time then!");
+};
 */
-// };
-
-// lunch(useranswer);
 
 /*  PRAC 2  */
 
@@ -155,119 +164,181 @@ if (firearm == "glock"){
 
 /*  PRAC 8  */
 
-/*
-var alarm = prompt("What time would you like to wake up tommorrow?");
+function alarm(){
+	var alarm = prompt("What time would you like to wake up tommorrow?");
 
-alarm = alarm.toLowerCase();
+	alarm = alarm.toLowerCase();
 
-if (alarm == "1am"){
-	console.log("What the heck, I am just getting to sleep!  Not a chance.");
-} else if (alarm == "2am"){
-	console.log("Say what??  I have kids you know!");
-} else if (alarm == "3am"){
-	console.log("Oh man, that is waaaay too early! How about 7?");
-} else if (alarm == "4am"){
-	console.log("What are we, in the Marines??  Go back to bed!!");
-} else if (alarm == "5am"){
-	console.log("Thats a little too early for me, but I can maybe do it one time for you!  I would prefer to sleep another hour though.");
-} else if (alarm == "6am"){
-	console.log("That's a bit early, but if that works for you, I will follow suit.");
-} else if (alarm == "7am"){
-	console.log("Sounds like a decent time to me.  See you tomorrow!");
-} else {
-	console.log("what are we, on vacation??");
+	if (alarm == "1am"){
+		console.log("What the heck, I am just getting to sleep!  Not a chance.");
+	} else if (alarm == "2am"){
+		console.log("Say what??  I have kids you know!");
+	} else if (alarm == "3am"){
+		console.log("Oh man, that is waaaay too early! How about 7?");
+	} else if (alarm == "4am"){
+		console.log("What are we, in the Marines??  Go back to bed!!");
+	} else if (alarm == "5am"){
+		console.log("Thats a little too early for me, but I can maybe do it one time for you!  I would prefer to sleep another hour though.");
+	} else if (alarm == "6am"){
+		console.log("That's a bit early, but if that works for you, I will follow suit.");
+	} else if (alarm == "7am"){
+		console.log("Sounds like a decent time to me.  See you tomorrow!");
+	} else {
+		console.log("what are we, on vacation??");
+	}
 }
-*/
 
 /*  PRAC 9  */
 
-/*
-var cookies = prompt("How many cookies can you eat?");
+function cookies(){
+	var cookies = prompt("How many cookies can you eat?");
 
-cookies = cookies.toLowerCase();
+	cookies = cookies.toLowerCase();
 
-if (cookies >= 10){
-	console.log("You can sure eat a bunch!");
-} else {
-	console.log("Not bad, not bad");
+	if (cookies >= 10){
+		console.log("You can sure eat a bunch!");
+	} else {
+		console.log("Not bad, not bad");
+	}
 }
-*/
+
 
 /*  PRAC 10 */
 
-/*
-var shoes = prompt("How many shoes do you have in your closet?");
+function shoes(){
+	var shoes = prompt("How many shoes do you have in your closet?");
 
-shoes = shoes.toLowerCase();
+	shoes = shoes.toLowerCase();
 
-if (shoes >= 10){
-	console.log("You have too many shoes!");
-} else {
-	console.log("Sounds like you are good to go!");
+	if (shoes >= 10){
+		console.log("You have too many shoes!");
+	} else {
+		console.log("Sounds like you are good to go!");
+	}
 }
-*/
 
-/*  PRAC 11 Nested  */
 
-var invite,
-	footType,
-	restaurant,
-	typeOf,
-	answer,
-	place;
+/*  PRAC 11 Nesting 1  */
 
-confirm("I am hungry and would like to go somewhere to eat.")	
-invite = prompt("Would you like to come and eat with me?")
-invite = invite.toLowerCase();
+function hungry(){
+	var invite,
+		foodType,
+		restaurant,
+		typeOf,
+		oliveG,
+		pjs,
+		place;
 
-if (invite == "sure" || invite == "yes"){
-	foodType = prompt("What are you in the mood for?");
-	foodType = foodType.toLowerCase();
-	if (foodType == "mexican"){
-		restaurant = prompt("Could you please maybe be a little more specific?");
-		restaurant = restaurant.toLowerCase();
-		if (restaurant == "taco time"){
-			console.log("Oh that's a really good choice!");
-		} else if (restaurant == "taco bell"){
-			console.log("Could we maybe stick to a little bit more authentic?");
-		} else if (restaurant == "taco jose"){
-			console.log("I ate there once, great tasting burritos, but gave me really bad heartburn!");
-		} else {
-			console.log("Lets do it!");
-		}
-	} else if (foodType == "italian"){
-		typeOf = prompt("Pizza or .......?");
-		typeOf = typeOf.toLowerCase();
-	  	if (restaurant == "pizza"){
-			answer = prompt("Shall we hit up Papa Johns?");
-			answer = answer.toLowerCase();
-			if (answer == "sure" || answer == "you bet" || answer == "yes"){
-				console.log("Awesome, lets go eat!");
+	confirm("I am hungry and would like to go somewhere to eat.")	
+	invite = prompt("Would you like to come and eat with me?")
+	invite = invite.toLowerCase();
+
+	if (invite == "sure" || invite == "you bet" || invite == "yes" || invite == "yepper" || invite == "yep" || invite == "absolutely" || invite == "you betcha"){
+		foodType = prompt("What are you in the mood for, Mexican, Italian or Chinese?");
+		foodType = foodType.toLowerCase();
+		if (foodType == "mexican"){
+			restaurant = prompt("I like Taco Time, what you do think?");
+			restaurant = restaurant.toLowerCase();
+			if (restaurant == "taco time"){
+				confirm("Oh that's a really good choice!");
+			} else if (restaurant == "taco bell"){
+				confirm("Could we maybe stick to a little bit more authentic?");
+			} else if (restaurant == "taco jose"){
+				confirm("I ate there once, great tasting burritos, but gave me really bad heartburn!");
 			} else {
-				console.log("Sounds good to me!");
+				confirm("Lets do it!");
 			}
-		} else if (typeOf == "pasta"){
-			answer = prompt("So maybe the olive garden, or is that too formal?");
-			answer = answer.toLowerCase();
-			if (answer2 == "sure" || answer == "you bet" || answer == "yes"){
-				console.log("Awesome, lets go eat!");
+		} else if (foodType == "italian"){
+			typeOf = prompt("Pizza or Pasta?");
+			typeOf = typeOf.toLowerCase();
+		  	if (typeOf == "pizza"){
+				pjs = prompt("Shall we hit up Papa Johns?");
+				pjs = pjs.toLowerCase();
+				if (pjs == "sure" || pjs == "you bet" || pjs == "yes" || pjs == "yepper" || pjs == "yep" || pjs == "absolutely" || pjs == "you betcha"){
+					confirm("Awesome, lets go eat!");
+				} else {
+					confirm("Sounds good to me!");
+				}
+			} else if (typeOf == "pasta"){
+				oliveG = prompt("So maybe the olive garden, or is that too formal?");
+				oliveG = oliveG.toLowerCase();
+				if (oliveG == "that works" || oliveG == "sure" || oliveG == "you bet" || oliveG == "yes" || oliveG == "yepper" || oliveG == "yep" || oliveG == "absolutely" || oliveG == "you betcha"){
+					confirm("Awesome, lets go eat!");
+				} else {
+					confirm("Sounds good to me!");
+				}
+			}
+		} else if (foodType == "chinese"){
+			place = prompt("Do you have any places in mind?");
+			place = place.toLowerCase();
+			if (place == "no, not really"){
+			confirm("Ok then, lets go explore!");
 			} else {
-				console.log("Sounds good to me!");
+				confirm("Let's go explore!");
 			}
-		}
-	} else if (foodType == "chinese"){
-		place = prompt("Do you have any places in mind?");
-		if (place == "no, not really"){
-		console.log("Ok then, lets go explore!");
 		} else {
-			console.log("Let's go!");
+			confirm("Ah dang, I forgot, I am fasting.");
 		}
 	} else {
-		console.log("Not today, I am fasting.");
+		confirm("Well, maybe some other time then!  See you after lunch!");
+	};
+}
+
+
+
+/*  PRAC 12 Nesting 2  */
+
+function greeting(){
+	var notSo,
+		quiet;
+
+	var greeting = prompt("Hello, how are you doing today, good great or not so good?");
+	greeting = greeting.toLowerCase();
+
+	if (greeting == "good"){
+		confirm("Good deal!");
+	} else if (greeting == "great"){
+		confirm("Wonderful!");
+	} else if (greeting == "not so good" || greeting == "not so"){
+		notSo = prompt("Do you want to talk about it?");
+		if (notSo == "no thanks" || notSo == "no" || notSo == "not really"){
+			confirm("Alright, well, I hope the rest of your day turns out better!");
+		} else {
+			quiet = prompt("Shall we go somewhere private to talk then?");
+			if (quiet == "sure" || quiet == "yes" || quiet == "yep"){
+				confirm("Lead the way!");
+			}
+		}
+	} else {
+		confirm("Well keep on truckin!");
+	};
+}
+/*  PRAC 13 FUNCTIONS  */
+
+
+function playBall(){
+	var ball,
+	typeOfBall;
+
+	ball = prompt("Whant to play ball, yes or no?");
+	ball = ball.toLowerCase();
+
+	if (ball == "yes"){
+		typeOfBall = prompt("Basketball or Baseball?");
+		typeOfBall = typeOfBall.toLowerCase();
+		if (typeOfBall == "basketball"){
+			game = prompt("One on One or Horse?")
+			game = game.toLowerCase();
+			if (game == "one on one"){
+				confirm("Let's flip a coin to see who goes first!");
+			} else {
+				confirm("Game on!");
+			}
+		} else if (typeOfBall == "baseball"){
+			confirm("Let's play catch!");
+		}
+	} else {
+		confirm("Maybe next time then!");
 	}
-} else {
-	console.log("Well, maybe some other time then!  See you after lunch!");
-};
-
-
+}
 
