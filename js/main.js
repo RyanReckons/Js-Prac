@@ -37,130 +37,134 @@
 
 /*  ASSIGNMENT FROM TYLER  there was a LOT of trial and error.  This is only showing what actually worked.  */
 
-/*
-var ball,
-	typeOfBall;
+function playBall2(){
+	var ball,
+		typeOfBall;
 
-ball = prompt("Whant to play ball, yes or no?");
-ball = ball.toLowerCase();
+	ball = prompt("Whant to play ball, yes or no?");
+	ball = ball.toLowerCase();
 
-if (ball == "yes"){
-	typeOfBall = prompt("Basketball or Baseball?");
-	typeOfBall = typeOfBall.toLowerCase();
-	if (typeOfBall == "basketball"){
-		game = prompt("One on One or Horse?")
-		game = game.toLowerCase();
-		if (game == "one on one"){
-			confirm("Let's flip a coin to see who goes first!");
-		} else {
-			confirm("Game on!");
+	if (ball == "yes"){
+		typeOfBall = prompt("Basketball or Baseball?");
+		typeOfBall = typeOfBall.toLowerCase();
+		if (typeOfBall == "basketball"){
+			game = prompt("One on One or Horse?")
+			game = game.toLowerCase();
+			if (game == "one on one"){
+				confirm("Let's flip a coin to see who goes first!");
+			} else {
+				confirm("Game on!");
+			}
+		} else if (typeOfBall == "baseball"){
+			confirm("Let's play catch!");
 		}
-	} else if (typeOfBall == "baseball"){
-		confirm("Let's play catch!");
+	} else {
+		confirm("Maybe next time then!");
 	}
-} else {
-	confirm("Maybe next time then!");
-};
-*/
+}
 
 /*  PRAC 2  */
 
-/*
-var useranswer1 = prompt("Would you like to go see the movie Star Wars tonight?");
+function movies(){
+	var useranswer1 = prompt("Would you like to go see the movie Star Wars tonight?");
 
-useranswer1 = useranswer1.toUpperCase();
+	useranswer1 = useranswer1.toUpperCase();
 
-if (useranswer1 == "YES"){
-	console.log("Awesome, I will get the tickets if you pay for popcorn!");
-} else if (useranswer1 == "SURE"){
-	console.log("Awesome, I will get the tickets if you pay for popcorn!");
-} else if (useranswer1 == "YEPPER"){
-	console.log("Awesome, I will get the tickets if you pay for popcorn!");
-} else if (useranswer1 == "LET'S DO IT"){
-	console.log("Awesome, I will get the tickets if you pay for popcorn!");
-} else if (useranswer1 == "I'M ALL FOR IT"){
-	console.log("Awesome, I will get the tickets if you pay for popcorn!");
-} else if (useranswer1 == "NO"){
-	console.log("Ok, maybe next time then!");
-} else if (useranswer1 == "YOU BETCHA"){
-	console.log("Ok, lets set a time!");
-} else if (useranswer1 == "SURE THING"){
-	console.log("Right on, I will get ready to go!");
-} else {
-	console.log("I don't understand.")
+	if (useranswer1 == "YES"){
+		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+	} else if (useranswer1 == "SURE"){
+		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+	} else if (useranswer1 == "YEPPER"){
+		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+	} else if (useranswer1 == "LET'S DO IT"){
+		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+	} else if (useranswer1 == "I'M ALL FOR IT"){
+		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+	} else if (useranswer1 == "NO"){
+		console.log("Ok, maybe next time then!");
+	} else if (useranswer1 == "YOU BETCHA"){
+		console.log("Ok, lets set a time!");
+	} else if (useranswer1 == "SURE THING"){
+		console.log("Right on, I will get ready to go!");
+	} else {
+		console.log("I don't understand.")
+	}
 }
-*/
 
 /*  PRAC 3  */
 
-/*
-var useranswer2 = prompt("What time is it?");
+function time(){
+	var useranswer2 = prompt("What time is it?");
 
-useranswer2 = useranswer2.toUpperCase();
+	useranswer2 = useranswer2.toUpperCase();
 
-if (useranswer2 == "1AM"){
-	console.log("It is waaaaay too early, go back to sleep!!!");
+	if (useranswer2 == "1AM"){
+		console.log("It is waaaaay too early, go back to sleep!!!");
+	}
 }
-*/
 
 /*  PRAC 4  */
 
-/*
-var useranswer3 = prompt("How are you doing today?");
+function greeting2(){
+	var useranswer3 = prompt("How are you doing today?");
 
-useranswer3 = useranswer3.toUpperCase();
+	useranswer3 = useranswer3.toUpperCase();
 
-if (useranswer3 == "GREAT THANK YOU"){
-	console.log("Fabulous, that is great to hear!")
-} else {
-	console.log("Keep on truckin!");
+	if (useranswer3 == "GREAT THANK YOU"){
+		console.log("Fabulous, that is great to hear!")
+	} else {
+		console.log("Keep on truckin!");
+	}
 }
-*/
+
 
 /*  PRAC 5  */
 
-/*
-var number = prompt("Give me a number!");
-if (number == 1){
-	console.log("Hey, we are thinkin along the same line!");
-} else if (number == 2){
-	console.log("Hey that's the number I was thinking of!");
-} else {
-	console.log("Darn, wasn't thinking of that number, you got me.");
+function number(){
+	var numb = prompt("Give me a number!");
+	if (numb == 1){
+		console.log("Hey, we are thinkin along the same line!");
+	} else if (numb == 2){
+		console.log("Hey that's the number I was thinking of!");
+	} else {
+		console.log("Darn, wasn't thinking of that number, you got me.");
+	}
 }
-*/
+
 
 /*  PRAC 6  */
 
-/*
-var candyBar = prompt("What is your favorite candy bar?")
+function candybar(){
+	var candyBar = prompt("What is your favorite candy bar?")
 
-candyBar = candyBar.toUpperCase();
+	candyBar = candyBar.toUpperCase();
 
-if (candyBar == "SNICKERS"){
-	console.log("Those sure fill me up!");
-} else if (candyBar == "MILKYWAY"){
-	console.log("Those are pretty good!");
-} else {
-	console.log('Oh those are really yummy!');
+	if (candyBar == "SNICKERS"){
+		console.log("Those sure fill me up!");
+	} else if (candyBar == "MILKYWAY"){
+		console.log("Those are pretty good!");
+	} else {
+		console.log('Oh those are really yummy!');
+	}
 }
-*/
+
 
 /*  PRAC 7  */
 
-/*
-var firearm = prompt("What is your favorite firearm?");
+function firearm(){
+	var firearm = prompt("What is your favorite firearm?");
 
-firearm = firearm.toLowerCase();
+	firearm = firearm.toLowerCase();
 
-if (firearm == "glock"){
-	console.log("Those are nice to have around.");
-} else if (firearm == ".22 revolver"){
-	console.log("Good for hunting rabbits!");
-} else {
-	console.log("Those will certainly keep you safe.");
+	if (firearm == "glock"){
+		console.log("Those are nice to have around.");
+	} else if (firearm == ".22 revolver"){
+		console.log("Good for hunting rabbits!");
+	} else {
+		console.log("Those will certainly keep you safe.");
+	}
 }
-*/
+
 
 /*  PRAC 8  */
 
