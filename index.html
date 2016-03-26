@@ -4,6 +4,7 @@
 <title>Javascript Practice</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
 <script type="text/javascript" src="js/main.js"></script>
 
@@ -13,11 +14,16 @@
 <![endif]-->
 
 <style>
-	body {font-family: Verdana, sans-serif; font-size:0.8em;}
-	header, nav, section, article, footer 	{border:1px solid grey; margin:5px; padding:8px;}
-	nav ul {margin:0; padding:0;}
-	nav ul li {display:inline; margin:5px;}
+	/* for all links on this page of code */
+  a:link {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 15px;text-decoration: none;}
+  /* visited link */ 
+  a:visited {background-color:rgb(0, 189, 222);color:white;text-decoration:none;}
+  /* mouse over link */
+  a:hover {background-color:rgb(0, 189, 222);text-decoration:none;color:white;}
+  /* active link */
+  a:active {background-color:rgb(0, 189, 222);color:white;text-decoration: none;}
 </style>
+
 
 </head>
 
@@ -38,56 +44,54 @@
 
 
 
-<nav style="text-align:center; background-color:lightgray;">
+<nav style="text-align:center;">
   <!--ul>
     <li><a href="#">LINK</a></li>
     <li><a href="#">LINK</a></li>
     <li><a href="#">LINK</a></li>
   </ul-->
-  <button style="background-color:blue;color:white;" type="button" onclick="playBall()">Play Ball</button> 
-  <button  style="background-color:yellow;color:red;" type="button" onclick="greeting()">Greeting</button>
-  <button  style="background-color:orange;color:black;" type="button" onclick="hungry()">Hungry</button>
-  <button style="background-color:blue;color:white;" type="button" onclick="shoes()">Shoes</button>
-  <button  style="background-color:yellow;color:red;" type="button" onclick="alarm()">Alarm</button>
-  <button  style="background-color:orange;color:black;" type="button" onclick="cookies()">How Many Cookies</button>
-  <button style="background-color:blue;color:white;" type="button" onclick="firearm()">Firearm</button>
-  <button  style="background-color:yellow;color:red;" type="button" onclick="candybar()">Candy Bar</button>
-  <button  style="background-color:orange;color:black;" type="button" onclick="number()">Number</button>
-  <button style="background-color:blue;color:white;" type="button" onclick="greeting2()">Greeting 2</button>
-  <button  style="background-color:yellow;color:red;" type="button" onclick="time()">Time</button>
-  <button  style="background-color:orange;color:black;" type="button" onclick="movies()">Movies</button>
-  <button style="background-color:blue;color:white;" type="button" onclick="playBall2()">Play Ball 2</button>
+  <p style="text-align:center">Click on buttons!</p>
   
-  <button  style="background-color:yellow;color:red;" type="button" onclick="time()">Time</button>
-  <button  style="background-color:orange;color:black;" type="button" onclick="movies()">Movies</button>
+  <button type="button" onclick="playBall()">Play Ball</button>
+  <button type="button" onclick="movies()">Movies</button>
+  <button type="button" onclick="time()">Time</button>
+  <button type="button" onclick="greeting2()">Greeting</button>
+  <button type="button" onclick="number()">Number</button>
+  <button type="button" onclick="candybar()">Candy Bar</button>
+  <button type="button" onclick="firearm()">Firearm</button>
+  <button type="button" onclick="alarm()">Alarm</button>
+  <button type="button" onclick="cookies()">Cookies</button>
+  <button type="button" onclick="shoes()">Shoes</button>
+  <button type="button" onclick="hungry()">Hungry</button>
+  <button type="button" onclick="greeting()">Greeting 2</button>
+  <button type="button" onclick="playBall2()">Play Ball 2</button>
 
 
-
-
-  
+  <!-- <button  style="" type="button" onclick="time()">Time</button> -->
+  <!-- <button  style="" type="button" onclick="movies()">Movies</button> -->
 </nav>
 
-<section style="background-color:lightgray">
+<section style="">
   <h2>Section Header</h2>
-  <article style="background-color:white">
+  <section id="grad" style="">
     <h2>Section</h2>
     <!-- <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p> -->
-  </article>
+  </section>
 
-  <article style="background-color:white">
+  <section id="grad" style="">
     <h2>Section</h2>
     <!-- <p>Paris is the capital and most populous city of France.</p> -->
-  </article>
+  </section>
 
-  <article style="background-color:white">
+  <section id="grad" style="">
     <h2>Section</h2>
     <!-- <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p> -->
-  </article>
+  </section>
 
 </section>
 
 <footer>
-<p>&copy; 2016 RyanReckons. All rights reserved.</p>
+<p id="allRights">&copy; 2016 RyanReckons. All rights reserved.</p>
 </footer>
 <script>
 

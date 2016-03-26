@@ -37,7 +37,7 @@
 
 /*  ASSIGNMENT FROM TYLER  there was a LOT of trial and error.  This is only showing what actually worked.  */
 
-function playBall2(){
+function playBall(){
 	var ball,
 		typeOfBall;
 
@@ -100,12 +100,14 @@ function time(){
 
 	if (useranswer2 == "1AM"){
 		confirm("It is waaaaay too early, go back to sleep!!!");
+	} else {
+		confirm("Thank you very much!");
 	}
 }
 
 /*  PRAC 4  */
 
-function greeting2(){
+function greeting(){
 	var useranswer3 = prompt("How are you doing today?");
 
 	useranswer3 = useranswer3.toUpperCase();
@@ -292,7 +294,7 @@ function hungry(){
 
 /*  PRAC 12 Nesting 2  */
 
-function greeting(){
+function greeting2(){
 	var notSo,
 		quiet;
 
@@ -320,7 +322,7 @@ function greeting(){
 /*  PRAC 13 FUNCTIONS  */
 
 
-function playBall(){
+function playBall2(){
 	var ball,
 	typeOfBall;
 
