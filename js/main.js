@@ -41,7 +41,7 @@ function playBall2(){
 	var ball,
 		typeOfBall;
 
-	ball = prompt("Whant to play ball, yes or no?");
+	ball = prompt("Want to play ball, yes or no?");
 	ball = ball.toLowerCase();
 
 	if (ball == "yes"){
@@ -71,23 +71,23 @@ function movies(){
 	useranswer1 = useranswer1.toUpperCase();
 
 	if (useranswer1 == "YES"){
-		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+		confirm("Awesome, I will get the tickets if you pay for popcorn!");
 	} else if (useranswer1 == "SURE"){
-		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+		confirm("Awesome, I will get the tickets if you pay for popcorn!");
 	} else if (useranswer1 == "YEPPER"){
-		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+		confirm("Awesome, I will get the tickets if you pay for popcorn!");
 	} else if (useranswer1 == "LET'S DO IT"){
-		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+		confirm("Awesome, I will get the tickets if you pay for popcorn!");
 	} else if (useranswer1 == "I'M ALL FOR IT"){
-		console.log("Awesome, I will get the tickets if you pay for popcorn!");
+		confirm("Awesome, I will get the tickets if you pay for popcorn!");
 	} else if (useranswer1 == "NO"){
-		console.log("Ok, maybe next time then!");
+		confirm("Ok, maybe next time then!");
 	} else if (useranswer1 == "YOU BETCHA"){
-		console.log("Ok, lets set a time!");
+		confirm("Ok, lets set a time!");
 	} else if (useranswer1 == "SURE THING"){
-		console.log("Right on, I will get ready to go!");
+		confirm("Right on, I will get ready to go!");
 	} else {
-		console.log("I don't understand.")
+		confirm("I don't understand.")
 	}
 }
 
@@ -99,7 +99,7 @@ function time(){
 	useranswer2 = useranswer2.toUpperCase();
 
 	if (useranswer2 == "1AM"){
-		console.log("It is waaaaay too early, go back to sleep!!!");
+		confirm("It is waaaaay too early, go back to sleep!!!");
 	}
 }
 
@@ -111,9 +111,9 @@ function greeting2(){
 	useranswer3 = useranswer3.toUpperCase();
 
 	if (useranswer3 == "GREAT THANK YOU"){
-		console.log("Fabulous, that is great to hear!")
+		confirm("Fabulous, that is great to hear!")
 	} else {
-		console.log("Keep on truckin!");
+		confirm("Keep on truckin!");
 	}
 }
 
@@ -123,11 +123,11 @@ function greeting2(){
 function number(){
 	var numb = prompt("Give me a number!");
 	if (numb == 1){
-		console.log("Hey, we are thinkin along the same line!");
+		confirm("Hey, we are thinkin along the same line!");
 	} else if (numb == 2){
-		console.log("Hey that's the number I was thinking of!");
+		confirm("Hey that's the number I was thinking of!");
 	} else {
-		console.log("Darn, wasn't thinking of that number, you got me.");
+		confirm("Darn, wasn't thinking of that number, you got me.");
 	}
 }
 
@@ -140,11 +140,11 @@ function candybar(){
 	candyBar = candyBar.toUpperCase();
 
 	if (candyBar == "SNICKERS"){
-		console.log("Those sure fill me up!");
+		confirm("Those sure fill me up!");
 	} else if (candyBar == "MILKYWAY"){
-		console.log("Those are pretty good!");
+		confirm("Those are pretty good!");
 	} else {
-		console.log('Oh those are really yummy!');
+		confirm('Oh those are really yummy!');
 	}
 }
 
@@ -157,11 +157,11 @@ function firearm(){
 	firearm = firearm.toLowerCase();
 
 	if (firearm == "glock"){
-		console.log("Those are nice to have around.");
+		confirm("Those are nice to have around.");
 	} else if (firearm == ".22 revolver"){
-		console.log("Good for hunting rabbits!");
+		confirm("Good for hunting rabbits!");
 	} else {
-		console.log("Those will certainly keep you safe.");
+		confirm("Those will certainly keep you safe.");
 	}
 }
 
@@ -174,21 +174,21 @@ function alarm(){
 	alarm = alarm.toLowerCase();
 
 	if (alarm == "1am"){
-		console.log("What the heck, I am just getting to sleep!  Not a chance.");
+		confirm("What the heck, I am just getting to sleep!  Not a chance.");
 	} else if (alarm == "2am"){
-		console.log("Say what??  I have kids you know!");
+		confirm("Say what??  I have kids you know!");
 	} else if (alarm == "3am"){
-		console.log("Oh man, that is waaaay too early! How about 7?");
+		confirm("Oh man, that is waaaay too early! How about 7?");
 	} else if (alarm == "4am"){
-		console.log("What are we, in the Marines??  Go back to bed!!");
+		confirm("What are we, in the Marines??  Go back to bed!!");
 	} else if (alarm == "5am"){
-		console.log("Thats a little too early for me, but I can maybe do it one time for you!  I would prefer to sleep another hour though.");
+		confirm("Thats a little too early for me, but I can maybe do it one time for you!  I would prefer to sleep another hour though.");
 	} else if (alarm == "6am"){
-		console.log("That's a bit early, but if that works for you, I will follow suit.");
+		confirm("That's a bit early, but if that works for you, I will follow suit.");
 	} else if (alarm == "7am"){
-		console.log("Sounds like a decent time to me.  See you tomorrow!");
+		confirm("Sounds like a decent time to me.  See you tomorrow!");
 	} else {
-		console.log("what are we, on vacation??");
+		confirm("what are we, on vacation??");
 	}
 }
 
@@ -200,9 +200,9 @@ function cookies(){
 	cookies = cookies.toLowerCase();
 
 	if (cookies >= 10){
-		console.log("You can sure eat a bunch!");
+		confirm("You can sure eat a bunch!");
 	} else {
-		console.log("Not bad, not bad");
+		confirm("Not bad, not bad");
 	}
 }
 
@@ -215,9 +215,9 @@ function shoes(){
 	shoes = shoes.toLowerCase();
 
 	if (shoes >= 10){
-		console.log("You have too many shoes!");
+		confirm("You have too many shoes!");
 	} else {
-		console.log("Sounds like you are good to go!");
+		confirm("Sounds like you are good to go!");
 	}
 }
 
@@ -324,7 +324,7 @@ function playBall(){
 	var ball,
 	typeOfBall;
 
-	ball = prompt("Whant to play ball, yes or no?");
+	ball = prompt("Want to play ball, yes or no?");
 	ball = ball.toLowerCase();
 
 	if (ball == "yes"){
