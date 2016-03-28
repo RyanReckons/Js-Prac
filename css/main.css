@@ -6,7 +6,7 @@ header, nav, section {width: 98%;text-align: center;}
 /*section {width: 98%;}*/
 nav ul {margin:0; padding:0;}
 nav ul li {display:inline; margin:5px;}
-section {background-color: rgb(215, 219, 243);}
+/*section {background-color: rgb(215, 219, 243);}*/
 section>h2 {text-align: center;}
 button {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 15px;}
 #allRights {color:rgb(0, 189, 222);}
@@ -17,6 +17,15 @@ button {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 1
   background: -moz-linear-gradient(white, rgb(0, 219, 255)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(white, rgb(0, 219, 255)); /* Standard syntax */
   width:30.33333333%;
+  /*float:left;*/
+}
+#grad2 {
+  background: rgb(215, 219, 243); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(215, 219, 243), white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(215, 219, 243), white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(215, 219, 243), white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(215, 219, 243), white); /* Standard syntax */
+  /*width:30.33333333%;*/
   /*float:left;*/
 }
 #musicTypes {margin-top:10px;}
