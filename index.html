@@ -67,7 +67,7 @@
     <h2>Camping Spots</h2>
     <form name="selectForm1">
       <p>
-        <label for="campSpots">Choose some music types,<br>then click the button below:</label><br>
+        <label for="campSpots">Choose a camping sopt,<br>then click the button below:</label><br>
         <select id="camping" name="camping" multiple="multiple">
           <option selected="selected">Mountains</option>
           <option>Desert</option>
@@ -124,10 +124,66 @@
           <option>Opera</option>
         </select>
       </p>
-      <p><input id="btn3" type="button" value="How many are selected?" /></p>
+      <p><input id="btn3" type="button" value="How many selected?" /></p>
     </form>
   </div>
 
+  <div id="grad" style="">
+    <h3>(For Loop)</h3>
+    <h2>New Option 4</h2>
+    <form name="selectForm4">
+      <p>
+        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
+        <select id="newName4" name="newName4" multiple="multiple">
+          <option selected="selected">Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </select>
+      </p>
+      <p><input id="btn4" type="button" value="How many selected?" /></p>
+    </form>
+  </div>
+
+  <div id="grad" style="">
+    <h3>(For Loop)</h3>
+    <h2>New Option 5</h2>
+    <form name="selectForm5">
+      <p>
+        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
+        <select id="newName5" name="newName5" multiple="multiple">
+          <option selected="selected">Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </select>
+      </p>
+      <p><input id="btn5" type="button" value="How many selected?" /></p>
+    </form>
+  </div>
+
+  <div id="grad" style="">
+    <h3>(For Loop)</h3>
+    <h2>New Option 6</h2>
+    <form name="selectForm6">
+      <p>
+        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
+        <select id="newName6" name="newName6" multiple="multiple">
+          <option selected="selected">Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </select>
+      </p>
+      <p><input id="btn6" type="button" value="How many selected?" /></p>
+    </form>
+  </div>
 </section>
 
 <footer>
@@ -135,17 +191,7 @@
 </footer>
 
 <script>
-
-function howMany(selectObject) {
-  var numberSelected = 0;
-  for (var i = 0; i < selectObject.options.length; i++){
-    if (selectObject.options[i].selected) {
-      numberSelected++;
-    }
-  }
-  return numberSelected;
-}
-var btn1 = document.getElementById("btn1");
+  var btn1 = document.getElementById("btn1");
 btn1.addEventListener("click", function(){
   confirm('Number of options selected: ' + howMany(document.selectForm1.camping))
 });
@@ -159,6 +205,22 @@ var btn3 = document.getElementById("btn3");
 btn3.addEventListener("click", function(){
   confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
 });
+
+var btn4 = document.getElementById("btn4");
+btn4.addEventListener("click", function(){
+  confirm('Number of options selected: ' + howMany(document.selectForm4.newName4))
+});
+
+var btn5 = document.getElementById("btn5");
+btn5.addEventListener("click", function(){
+  confirm('Number of options selected: ' + howMany(document.selectForm5.newName5))
+});
+
+var btn6 = document.getElementById("btn6");
+btn6.addEventListener("click", function(){
+  confirm('Number of options selected: ' + howMany(document.selectForm6.newName6))
+});
+
 </script>
 
 </body>
