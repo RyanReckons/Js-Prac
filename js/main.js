@@ -350,6 +350,8 @@ function playBall2(){
 
 /*  INTRO TO LOOPS  */
 
+/*  FOR LOOPS  */
+
 function howMany(selectObject) {
   var numberSelected = 0;
   for (var i = 0; i < selectObject.options.length; i++){
@@ -359,3 +361,62 @@ function howMany(selectObject) {
   }
   return numberSelected;
 }
+
+/*  DO WHILE  */
+
+function countDown() {
+	var i = 6;
+	do {
+  		i--;
+  		confirm(i);
+	} while (i > 1);
+	alert("Blast OFF!!!");
+}
+
+/*  WHILE  */
+function countUp() {
+	var i = 1;
+	while(i < 11){
+  		confirm(i);
+  		i++;
+	} alert("Ready or not, here I come!!!");
+}
+
+
+/*  DO WHILE WITH IF ELSE NESTED  */
+function pickAnumber(){
+attempts = 0;
+do { 
+
+	if (attempts == 0) {
+		promptMessage = "Pick a number between 1 and 10";	
+	} else{
+		promptMessage = "Try again!";
+	};
+	 
+	user = prompt(promptMessage);
+	attempts++;
+} while(user != 3 && attempts <= 3)
+
+alert("Good pick!");
+}
+
+
+
+/*function pickColor(){
+attempts = 0;
+
+do { 
+
+	if (attempts == 0) {
+		promptMessage = "Try and guess my favorite color!";	
+	} else{
+		promptMessage = "Try again!";
+	};
+	 
+	user = prompt(promptMessage);
+	attempts++;
+} while(user != lighblue && attempts <= 3)
+
+alert("You got it dude!");
+}*/

@@ -127,11 +127,14 @@
       <p><input id="btn3" type="button" value="How many selected?" /></p>
     </form>
   </div>
-
+  
+  <!--  NEW ROW, DO WHILE SECTION  -->
+  
   <div id="grad" style="">
-    <h3>(For Loop)</h3>
-    <h2>New Option 4</h2>
-    <form name="selectForm4">
+    <h3>(Do While Loop)</h3>
+    <h2>Pick a Number</h2>
+    <button type="button" onclick="pickAnumber()">Pick a number!</button>
+    <!--form name="selectForm4">
       <p>
         <label for="newFor">Choose an option,<br>then click the button below:</label><br>
         <select id="newName4" name="newName4" multiple="multiple">
@@ -144,13 +147,14 @@
         </select>
       </p>
       <p><input id="btn4" type="button" value="How many selected?" /></p>
-    </form>
+    </form-->
   </div>
 
   <div id="grad" style="">
-    <h3>(For Loop)</h3>
-    <h2>New Option 5</h2>
-    <form name="selectForm5">
+    <h3>(Do While Loop)</h3>
+    <h2>Count Down</h2>
+    <button type="button" onclick="countDown()">Click for Count!</button>
+    <!--form name="selectForm5">
       <p>
         <label for="newFor">Choose an option,<br>then click the button below:</label><br>
         <select id="newName5" name="newName5" multiple="multiple">
@@ -163,13 +167,14 @@
         </select>
       </p>
       <p><input id="btn5" type="button" value="How many selected?" /></p>
-    </form>
+    </form-->
   </div>
 
   <div id="grad" style="">
     <h3>(For Loop)</h3>
-    <h2>New Option 6</h2>
-    <form name="selectForm6">
+    <h2>Count to 10</h2>
+    <button type="button" onclick="countUp()">Click for Count!</button>
+    <!--form name="selectForm6">
       <p>
         <label for="newFor">Choose an option,<br>then click the button below:</label><br>
         <select id="newName6" name="newName6" multiple="multiple">
@@ -182,7 +187,7 @@
         </select>
       </p>
       <p><input id="btn6" type="button" value="How many selected?" /></p>
-    </form>
+    </form-->
   </div>
 </section>
 
@@ -206,10 +211,10 @@ btn3.addEventListener("click", function(){
   confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
 });
 
-var btn4 = document.getElementById("btn4");
+/*var btn4 = document.getElementById("btn4");
 btn4.addEventListener("click", function(){
   confirm('Number of options selected: ' + howMany(document.selectForm4.newName4))
-});
+});*/
 
 var btn5 = document.getElementById("btn5");
 btn5.addEventListener("click", function(){
