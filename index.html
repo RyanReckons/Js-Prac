@@ -147,17 +147,17 @@ function howMany(selectObject) {
 }
 var btn1 = document.getElementById("btn1");
 btn1.addEventListener("click", function(){
-  alert('Number of options selected: ' + howMany(document.selectForm1.camping))
+  confirm('Number of options selected: ' + howMany(document.selectForm1.camping))
 });
 
 var btn2 = document.getElementById("btn2");
 btn2.addEventListener("click", function(){
-  alert('Number of options selected: ' + howMany(document.selectForm2.prophets))
+  confirm('Number of options selected: ' + howMany(document.selectForm2.prophets))
 });
 
 var btn3 = document.getElementById("btn3");
 btn3.addEventListener("click", function(){
-  alert('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
+  confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
 });
 </script>
 
