@@ -30,21 +30,10 @@
 <body>
 
 <header>
-<h1 style="text-align:center">Javascript Practice</h1>
+<h1>Javascript Practice</h1>
 </header>
 
-
-
-
-
-<!-- <p>The global function (myFunction) returns the product of the arguments (a ,b):</p> -->
-<!-- <p id="demo"></p> -->
-
-<!-- <p id="demo1"></p> -->
-
-
-
-<nav style="text-align:center;">
+<nav>
   <!--ul>
     <li><a href="#">LINK</a></li>
     <li><a href="#">LINK</a></li>
@@ -71,62 +60,106 @@
   <!-- <button  style="" type="button" onclick="movies()">Movies</button> -->
 </nav>
 
-<section style="">
-  <h2>Section Header</h2>
-  <section id="grad" style="">
-    <h2>Section</h2>
-    <!-- <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p> -->
-  </section>
+<section>
+  <h2>Loops</h2>
+  <div id="grad" style="">
+    <h3>(For Loop)</h3>
+    <h2>Camping Spots</h2>
+    <form name="selectForm1">
+      <p>
+        <label for="campSpots">Choose some music types,<br>then click the button below:</label><br>
+        <select id="camping" name="camping" multiple="multiple">
+          <option selected="selected">Mountains</option>
+          <option>Desert</option>
+          <option>Midwest</option>
+          <option>Beach</option>
+          <option>Campgrounds</option>
+          <option>Backyard</option>
+        </select>
+      </p>
+      <p><input id="btn1" type="button" value="How many are selected?" /></p>
+    </form>
+  </div>
 
-  <section id="grad" style="">
-    <h2>Section</h2>
-    <!-- <p>Paris is the capital and most populous city of France.</p> -->
-  </section>
+  <div id="grad">
+    <h3>(For Loop)</h3>
+    <h2>Book of Mormon</h2>
+    <form name="selectForm2">
+      <p>
+        <label for="bookOfMorm">Choose your prophet,<br>then click the button below:</label><br>
+        <select id="prophets" name="prophets" multiple="multiple">
+          <option selected="selected">1 Nephi</option>
+          <option>2 Nephi</option>
+          <option>Jacob</option>
+          <option>Enos</option>
+          <option>Jarom</option>
+          <option>Omni</option>
+          <option>Words of Mormon</option>
+          <option>Mosiah</option>
+          <option>Alma</option>
+          <option>Helaman</option>
+          <option>3 Nephi</option>
+          <option>4 Nephi</option>
+          <option>Mormon</option>
+          <option>Ether</option>
+          <option>Moroni</option>
+        </select>
+      </p>
+      <p><input id="btn2" type="button" value="How many selected?" /></p>
+    </form>
+  </div>
 
-  <section id="grad" style="">
-    <h2>Section</h2>
-    <!-- <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p> -->
-  </section>
+  <div id="grad">
+    <h3>(For Loop)</h3>
+    <h2>Music</h2>
+    <form name="selectForm3">
+      <p>
+        <label for="musicTypes">Choose some music types,<br>then click the button below:</label><br>
+        <select id="musicTypes" name="musicTypes" multiple="multiple">
+          <option selected="selected">R&B</option>
+          <option>Jazz</option>
+          <option>Blues</option>
+          <option>New Age</option>
+          <option>Classical</option>
+          <option>Opera</option>
+        </select>
+      </p>
+      <p><input id="btn3" type="button" value="How many are selected?" /></p>
+    </form>
+  </div>
 
 </section>
 
 <footer>
 <p id="allRights">&copy; 2016 RyanReckons. All rights reserved.</p>
 </footer>
+
 <script>
 
-
-// The following variables are defined in the global scope
-var num1 = 20,
-    num2 = 3,
-    name = "Ryan";
-
-// This function is defined in the global scope
-function multiply() {
-  return num1 * num2;
-}
-
-multiply(); // Returns 60
-
-// A nested function example
-function getScore () {
-  var num1 = 20,
-      num2 = 3;
-  
-  function add() {
-    return name + " scored " + (num1 + num2);
+function howMany(selectObject) {
+  var numberSelected = 0;
+  for (var i = 0; i < selectObject.options.length; i++){
+    if (selectObject.options[i].selected) {
+      numberSelected++;
+    }
   }
-  
-  return add();
+  return numberSelected;
 }
+var btn1 = document.getElementById("btn1");
+btn1.addEventListener("click", function(){
+  alert('Number of options selected: ' + howMany(document.selectForm1.camping))
+});
 
+var btn2 = document.getElementById("btn2");
+btn2.addEventListener("click", function(){
+  alert('Number of options selected: ' + howMany(document.selectForm2.prophets))
+});
 
-  
-
-// document.getElementById("demo").innerHTML = multiply(); 
-// document.getElementById("demo1").innerHTML = getScore();
-
-
+var btn3 = document.getElementById("btn3");
+btn3.addEventListener("click", function(){
+  alert('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
+});
 </script>
+
 </body>
 </html>
