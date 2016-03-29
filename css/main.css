@@ -1,5 +1,5 @@
 body {font-family: Verdana, sans-serif; font-size:0.8em;}
-header, nav, section, div, footer 	{margin:5px; padding:8px;float:left;}
+header, nav, section,div , footer 	{margin:5px; padding:8px;float:left;}
 /*nav {background-color: rgb(215, 219, 243)}*/
 header, nav, section {width: 98%;text-align: center;}
 /*header>h1 {border: 1px solid black;}*/
@@ -8,7 +8,7 @@ nav ul {margin:0; padding:0;}
 nav ul li {display:inline; margin:5px;}
 /*section {background-color: rgb(215, 219, 243);}*/
 section>h2 {text-align: center;}
-button {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 15px;}
+button {background-color: rgb(0, 219, 255); color:white;padding:5px;margin-left: 15px;font-size: 16px;}
 #allRights {color:rgb(0, 189, 222);}
 #grad {
   background: rgb(0, 219, 255); /* For browsers that do not support gradients */
@@ -34,3 +34,6 @@ button {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 1
 #musicTypes {margin-top:10px;}
 #prophets {margin-top:10px;}
 #camping {margin-top:10px;position: relative;}
+/*#test {width:12%; color:white;background-color: lightblue;font-size: 16px;}*/
+
+

@@ -69,20 +69,12 @@ function playBall(){
 function movies(){
   var useranswer1 = prompt("Would you like to go see the movie Star Wars tonight?");
   useranswer1 = useranswer1.toLowerCase();
-  var answer = ['yes', 'sure', 'yepper', 'lets do it', 'im all for it', 'no', 
-                  'you betcha', 'sure thing', 'not sure'];
+  var posAnswers = ['yes', 'sure', 'yepper', 'lets do it', 'im all for it'];
 
-  if (useranswer1 == "yes"){
+  
+  if (useraswer1.indexOf(posAnswers) >= 0){
     confirm("Awesome, I will get the tickets if you pay for popcorn!");
-  } else if (useranswer1 == "sure"){
-    confirm("Awesome, I will get the tickets if you pay for popcorn!");
-  } else if (useranswer1 == "yepper"){
-    confirm("Awesome, I will get the tickets if you pay for popcorn!");
-  } else if (useranswer1 == "let's do it"){
-    confirm("Awesome, I will get the tickets if you pay for popcorn!");
-  } else if (useranswer1 == "i'm all for it"){
-    confirm("Awesome, I will get the tickets if you pay for popcorn!");
-  } else if (useranswer1 == "no"){
+  }  else if (useranswer1 == "no"){
     confirm("ok, maybe next time then!");
   } else if (useranswer1 == "you betcha"){
     confirm("ok, lets set a time!");
@@ -98,14 +90,14 @@ function movies(){
 /*  PRAC 3  */
 
 function time(){
-    var early = "It is waaaaay too early, go back to sleep!!!";
-    var thanks = "Thank you very much!";
-    var useranswer2 = prompt("What time is it?");
+  var early = "It is waaaaay too early, go back to sleep!!!";
+  var thanks = "Thank you very much!";
+  var useranswer2 = prompt("What time is it?");
 
-    useranswer2 = useranswer2.toUpperCase();
+  useranswer2 = useranswer2.toUpperCase();
 
-    var message = (useranswer2 == "1AM") ? early : thanks;
-    confirm(message)
+  var message = (useranswer2 == "1AM") ? early : thanks;
+  confirm(message)
 }
 /*  if (useranswer2 == "1AM"){
         confirm("early");
@@ -116,146 +108,173 @@ function time(){
 
 /*  PRAC 4  */
 
-function greeting(){
-    var useranswer3 = prompt("How are you doing today?");
+/*function greeting(){
+  var useranswer3 = prompt("How are you doing today?");
 
-    useranswer3 = useranswer3.toUpperCase();
+  useranswer3 = useranswer3.toUpperCase();
 
-    if (useranswer3 == "GREAT THANK YOU"){
-        confirm("Fabulous, that is great to hear!")
-    } else {
-        confirm("Keep on truckin!");
-    }
+  if (useranswer3 == "GREAT THANK YOU"){
+    confirm("Fabulous, that is great to hear!")
+  } else {
+    confirm("Keep on truckin!");
+  }
+}*/
+
+/*  PRAC 12 Nesting 2  */
+
+function greeting2(){
+  var notSo,
+      quiet;
+
+  var greeting = prompt("Hello, how are you doing today, good great or not so good?");
+  greeting = greeting.toLowerCase();
+
+  if (greeting == "good" || greeting == "great thank you!"){
+      confirm("Good deal!");
+  } else if (greeting == "great"){
+      confirm("Wonderful, that is great to hear!");
+  } else if (greeting == "not so good" || greeting == "not so"){
+      notSo = prompt("Do you want to talk about it?");
+      if (notSo == "no thanks" || notSo == "no" || notSo == "not really"){
+          confirm("Alright, well, I hope the rest of your day turns out better!");
+      } else {
+          quiet = prompt("Shall we go somewhere private to talk then?");
+          if (quiet == "sure" || quiet == "yes" || quiet == "yep"){
+            confirm("Lead the way!");
+          }
+      }
+  } else {
+      confirm("Well keep on truckin!");
+  };
 }
-
 
 /*  PRAC 5  */
 
 function number(){
-    var numb = prompt("Give me a number!");
-    if (numb == 1){
-        confirm("Hey, we are thinkin along the same line!");
-    } else if (numb == 2){
-        confirm("Hey that's the number I was thinking of!");
-    } else {
-        confirm("Darn, wasn't thinking of that number, you got me.");
-    }
+  var numb = prompt("Give me a number!");
+  if (numb == 1){
+    confirm("Hey, we are thinkin along the same line!");
+  } else if (numb == 2){
+    confirm("Hey that's the number I was thinking of!");
+  } else {
+    confirm("Darn, wasn't thinking of that number, you got me.");
+  }
 }
 
 
 /*  PRAC 6  */
 
 function candybar(){
-    var candyBar = prompt("What is your favorite candy bar?")
+  var candyBar = prompt("What is your favorite candy bar?")
 
-    candyBar = candyBar.toUpperCase();
+  candyBar = candyBar.toUpperCase();
 
-    if (candyBar == "SNICKERS"){
-        confirm("Those sure fill me up!");
-    } else if (candyBar == "MILKYWAY"){
-        confirm("Those are pretty good!");
-    } else {
-        confirm('Oh those are really yummy!');
-    }
+  if (candyBar == "SNICKERS"){
+    confirm("Those sure fill me up!");
+  } else if (candyBar == "MILKYWAY"){
+    confirm("Those are pretty good!");
+  } else {
+    confirm('Oh those are really yummy!');
+  }
 }
 
 
 /*  PRAC 7  */
 
 function firearm(){
-    var firearm = prompt("What is your favorite firearm?");
+  var firearm = prompt("What is your favorite firearm?");
 
-    firearm = firearm.toLowerCase();
+  firearm = firearm.toLowerCase();
 
-    if (firearm == "glock"){
-        confirm("Those are nice to have around.");
-    } else if (firearm == ".22 revolver"){
-        confirm("Good for hunting rabbits!");
-    } else {
-        confirm("Those will certainly keep you safe.");
-    }
+  if (firearm == "glock"){
+    confirm("Those are nice to have around.");
+  } else if (firearm == ".22 revolver"){
+    confirm("Good for hunting rabbits!");
+  } else {
+    confirm("Those will certainly keep you safe.");
+  }
 }
 
 
 /*  PRAC 8  */
 
 function alarm(){
-    var alarm = prompt("What time would you like to wake up tommorrow?");
+  var alarm = prompt("What time would you like to wake up tommorrow?");
 
-    alarm = alarm.toLowerCase();
+  alarm = alarm.toLowerCase();
 
-    if (alarm == "1am"){
-        confirm("What the heck, I am just getting to sleep!  Not a chance.");
-    } else if (alarm == "2am"){
-        confirm("Say what??  I have kids you know!");
-    } else if (alarm == "3am"){
-        confirm("Oh man, that is waaaay too early! How about 7?");
-    } else if (alarm == "4am"){
-        confirm("What are we, in the Marines??  Go back to bed!!");
-    } else if (alarm == "5am"){
-        confirm("Thats a little too early for me, but I can maybe do it one time for you!  I would prefer to sleep another hour though.");
-    } else if (alarm == "6am"){
-        confirm("That's a bit early, but if that works for you, I will follow suit.");
-    } else if (alarm == "7am"){
-        confirm("Sounds like a decent time to me.  See you tomorrow!");
-    } else {
-        confirm("what are we, on vacation??");
-    }
+  if (alarm == "1am"){
+    confirm("What the heck, I am just getting to sleep!  Not a chance.");
+  } else if (alarm == "2am"){
+    confirm("Say what??  I have kids you know!");
+  } else if (alarm == "3am"){
+    confirm("Oh man, that is waaaay too early! How about 7?");
+  } else if (alarm == "4am"){
+    confirm("What are we, in the Marines??  Go back to bed!!");
+  } else if (alarm == "5am"){
+    confirm("Thats a little too early for me, but I can maybe do it one time for you!  I would prefer to sleep another hour though.");
+  } else if (alarm == "6am"){
+    confirm("That's a bit early, but if that works for you, I will follow suit.");
+  } else if (alarm == "7am"){
+    confirm("Sounds like a decent time to me.  See you tomorrow!");
+  } else {
+    confirm("what are we, on vacation??");
+  }
 }
 
 /*  PRAC 9  */
 
 function cookies(){
-    var cookies = prompt("How many cookies can you eat?");
+  var cookies = prompt("How many cookies can you eat?");
 
-    cookies = cookies.toLowerCase();
+  cookies = cookies.toLowerCase();
 
-    if (cookies >= 10){
-        confirm("You can sure eat a bunch!");
-    } else {
-        confirm("Not bad, not bad");
-    }
+  if (cookies >= 10){
+    confirm("You can sure eat a bunch!");
+  } else {
+    confirm("Not bad, not bad");
+  }
 }
 
 
 /*  PRAC 10 */
 
 function shoes(){
-    var shoes = prompt("How many shoes do you have in your closet?");
+  var shoes = prompt("How many shoes do you have in your closet?");
 
-    shoes = shoes.toLowerCase();
+  shoes = shoes.toLowerCase();
 
-    if (shoes >= 10){
-        confirm("You have too many shoes!");
-    } else {
-        confirm("Sounds like you are good to go!");
-    }
+  if (shoes >= 10){
+    confirm("You have too many shoes!");
+  } else {
+    confirm("Sounds like you are good to go!");
+  }
 }
 
 
 /*  PRAC 11 Nesting 1  */
 
 function hungry(){
-    var invite,
-        foodType,
-        restaurant,
-        typeOf,
-        oliveG,
-        pjs,
-        place;
+  var invite,
+      foodType,
+      restaurant,
+      typeOf,
+      oliveG,
+      pjs,
+      place;
 
-    confirm("I am hungry and would like to go somewhere to eat.")   
-    invite = prompt("Would you like to come and eat with me?")
-    invite = invite.toLowerCase();
+  confirm("I am hungry and would like to go somewhere to eat.")   
+  invite = prompt("Would you like to come and eat with me?")
+  invite = invite.toLowerCase();
 
-    if (invite == "sure" || invite == "you bet" || invite == "yes" || invite == "yepper" || invite == "yep" || invite == "absolutely" || invite == "you betcha"){
-        foodType = prompt("What are you in the mood for, Mexican, Italian or Chinese?");
-        foodType = foodType.toLowerCase();
-        if (foodType == "mexican"){
-            restaurant = prompt("I like Taco Time, what you do think?");
-            restaurant = restaurant.toLowerCase();
-            if (restaurant == "taco time"){
-                confirm("Oh that's a really good choice!");
+  if (invite == "sure" || invite == "you bet" || invite == "yes" || invite == "yepper" || invite == "yep" || invite == "absolutely" || invite == "you betcha"){
+      foodType = prompt("What are you in the mood for, Mexican, Italian or Chinese?");
+      foodType = foodType.toLowerCase();
+      if (foodType == "mexican"){
+          restaurant = prompt("I like Taco Time, what you do think?");
+          restaurant = restaurant.toLowerCase();
+          if (restaurant == "taco time"){
+            confirm("Oh that's a really good choice!");
             } else if (restaurant == "taco bell"){
                 confirm("Could we maybe stick to a little bit more authentic?");
             } else if (restaurant == "taco jose"){
@@ -263,12 +282,12 @@ function hungry(){
             } else {
                 confirm("Lets do it!");
             }
-        } else if (foodType == "italian"){
+          } else if (foodType == "italian"){
             typeOf = prompt("Pizza or Pasta?");
             typeOf = typeOf.toLowerCase();
             if (typeOf == "pizza"){
-                pjs = prompt("Shall we hit up Papa Johns?");
-                pjs = pjs.toLowerCase();
+              pjs = prompt("Shall we hit up Papa Johns?");
+              pjs = pjs.toLowerCase();
                 if (pjs == "sure" || pjs == "you bet" || pjs == "yes" || pjs == "yepper" || pjs == "yep" || pjs == "absolutely" || pjs == "you betcha"){
                     confirm("Awesome, lets go eat!");
                 } else {
@@ -301,60 +320,87 @@ function hungry(){
 
 
 
-/*  PRAC 12 Nesting 2  */
 
-function greeting2(){
-    var notSo,
-        quiet;
-
-    var greeting = prompt("Hello, how are you doing today, good great or not so good?");
-    greeting = greeting.toLowerCase();
-
-    if (greeting == "good"){
-        confirm("Good deal!");
-    } else if (greeting == "great"){
-        confirm("Wonderful!");
-    } else if (greeting == "not so good" || greeting == "not so"){
-        notSo = prompt("Do you want to talk about it?");
-        if (notSo == "no thanks" || notSo == "no" || notSo == "not really"){
-            confirm("Alright, well, I hope the rest of your day turns out better!");
-        } else {
-            quiet = prompt("Shall we go somewhere private to talk then?");
-            if (quiet == "sure" || quiet == "yes" || quiet == "yep"){
-                confirm("Lead the way!");
-            }
-        }
-    } else {
-        confirm("Well keep on truckin!");
-    };
-}
 /*  PRAC 13 FUNCTIONS  */
 
 
-function playBall2(){
-    var ball,
-    typeOfBall;
+/*function playBall2(){
+  var ball,
+  typeOfBall;
 
-    ball = prompt("Want to play ball, yes or no?");
-    ball = ball.toLowerCase();
+  ball = prompt("Want to play ball, yes or no?");
+  ball = ball.toLowerCase();
 
-    if (ball == "yes"){
-        typeOfBall = prompt("Basketball or Baseball?");
-        typeOfBall = typeOfBall.toLowerCase();
-        if (typeOfBall == "basketball"){
-            game = prompt("One on One or Horse?")
-            game = game.toLowerCase();
-            if (game == "one on one"){
-                confirm("Let's flip a coin to see who goes first!");
-            } else {
-                confirm("Game on!");
-            }
-        } else if (typeOfBall == "baseball"){
-            confirm("Let's play catch!");
-        }
-    } else {
-        confirm("Maybe next time then!");
+  if (ball == "yes"){
+      typeOfBall = prompt("Basketball or Baseball?");
+      typeOfBall = typeOfBall.toLowerCase();
+      if (typeOfBall == "basketball"){
+          game = prompt("One on One or Horse?")
+          game = game.toLowerCase();
+          if (game == "one on one"){
+              confirm("Let's flip a coin to see who goes first!");
+          } else {
+              confirm("Game on!");
+          }
+      } else if (typeOfBall == "baseball"){
+          confirm("Let's play catch!");
+      }
+  } else {
+      confirm("Maybe next time then!");
+  }
+}*/
+
+
+/*  ROCK PAPER SCISSORS  */
+function rockPaperScissors(){
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+userChoice = userChoice.toLowerCase();
+
+var computerChoice = Math.random();
+    
+if(computerChoice<=0.34) {
+   computerChoice="rock";
+} else if (computerChoice>=0.67) {
+  computerChoice="paper";
+} else {
+  computerChoice="scissors";
+} alert("Computer: " + computerChoice);
+var choice1 = userChoice;
+var choice2 = computerChoice;
+
+var compare = function(choice1, choice2){
+if(choice1 === choice2) {
+    alert("The result is a tie!");
+} 
+
+else if(choice1 === "rock") {
+    
+    if(choice2 === "scissors") {
+        alert("rock wins");
+    } 
+    else {
+        alert("paper wins");
     }
+} else if(choice1 === "paper") {
+    
+    if(choice2 === "rock") {
+        alert("paper wins");
+    } 
+    else {
+        alert("scissors wins");
+    }
+}
+
+else if (choice1 === "scissors"){
+  if (choice2 === "rock"){
+    alert("rock wins");
+} else {
+    alert("scissors wins");
+  }
+}
+};
+
+compare(userChoice,computerChoice);
 }
 
 /*  ---------------INTRO TO LOOPS----------------  */
@@ -413,6 +459,8 @@ function countUp() {
         i++;
     } alert("Ready or not, here I come!!!");
 }
+
+
 
 /*  WEB PAGE ROW 3  */
 
