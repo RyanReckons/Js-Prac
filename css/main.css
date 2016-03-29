@@ -16,7 +16,10 @@ button {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 1
   background: -o-linear-gradient(white, rgb(0, 219, 255)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(white, rgb(0, 219, 255)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(white, rgb(0, 219, 255)); /* Standard syntax */
-  width:30.33333333%;
+  width:300px;
+  position: relative;
+  margin:45px;
+  padding:8px;
   /*float:left;*/
 }
 #grad2 {
@@ -30,4 +33,4 @@ button {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 1
 }
 #musicTypes {margin-top:10px;}
 #prophets {margin-top:10px;}
-#camping {margin-top:10px;}
+#camping {margin-top:10px;position: relative;}

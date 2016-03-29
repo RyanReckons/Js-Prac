@@ -348,20 +348,24 @@ function playBall2(){
 	}
 }
 
-/*  INTRO TO LOOPS  */
+/*  ---------------INTRO TO LOOPS----------------  */
 
+
+/*  WEB PAGE ROW 1 -- CAMPING, BOM, MUSIC  */
 /*  FOR LOOPS  */
+
 
 function howMany(selectObject) {
   var numberSelected = 0;
   for (var i = 0; i < selectObject.options.length; i++){
     if (selectObject.options[i].selected) {
       numberSelected++;
-    }
+    } confirm(i);
   }
   return numberSelected;
 }
 
+/*  WEB PAGE ROW 2 -- COUNTDOWN, PICKANUMBER, COUNTUP  */
 /*  DO WHILE  */
 
 function countDown() {
@@ -373,17 +377,8 @@ function countDown() {
 	alert("Blast OFF!!!");
 }
 
-/*  WHILE  */
-function countUp() {
-	var i = 1;
-	while(i < 11){
-  		confirm(i);
-  		i++;
-	} alert("Ready or not, here I come!!!");
-}
-
-
 /*  DO WHILE WITH IF ELSE NESTED  */
+
 function pickAnumber(){
 attempts = 0;
 do { 
@@ -401,7 +396,16 @@ do {
 alert("Good pick!");
 }
 
+/*  WHILE  */
+function countUp() {
+	var i = 1;
+	while(i < 11){
+  		confirm(i);
+  		i++;
+	} alert("Ready or not, here I come!!!");
+}
 
+/*  WEB PAGE ROW 3  */
 
 /*function pickColor(){
 attempts = 0;
