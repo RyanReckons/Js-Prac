@@ -65,11 +65,12 @@ function playBall(){
 }
 
 /*  PRAC 2  */
+var posAnswers = ['yes', 'sure', 'yepper', 'lets do it', 'im all for it'];
 
 function movies(){
   var useranswer1 = prompt("Would you like to go see the movie Star Wars tonight?");
   useranswer1 = useranswer1.toLowerCase();
-  var posAnswers = ['yes', 'sure', 'yepper', 'lets do it', 'im all for it'];
+  
 
   
   if (useraswer1.indexOf(posAnswers) >= 0){
@@ -147,6 +148,20 @@ function greeting2(){
       confirm("Well keep on truckin!");
   };
 }
+
+
+function brokeDown(){
+var response = prompt("Hello, it looks like you have a flat tire.  Can I help?");
+response = response.toLowerCase();
+
+if (response.indexOf(posAnswers) >= 0){
+  alert("Ok, I will grab my tire iron!");
+} else {
+  alert("Ok, good luck!");
+}
+
+}
+
 
 /*  PRAC 5  */
 
@@ -481,3 +496,8 @@ do {
 
 alert("You got it dude!");
 }*/
+
+function isPosAnswer(){
+
+
+}
