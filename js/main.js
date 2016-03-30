@@ -39,7 +39,7 @@
 
 var shortPosAnswers = ['yes', 'sure', 'Sure', 'yep', 'yepper'];
 var longPosAnswers = ['lets do it', 'im all for it', 'you betcha', 'sure thing'];
-var negAnswers = ['not sure', ];
+var negAnswers = ['not sure', 'not so good', 'not so', 'no thanks', 'no', 'not really'];
 var answer1 = ['12am', '1am', '2am', '3am', '4am', '5am'];
 var answer2 = [, '6am', '7am'];
 var answer3 = ['8am', '9am', '10am','11am'];
@@ -126,9 +126,9 @@ function greeting(){
       confirm("Good deal!");
   } else if (posGreet.indexOf(greeting) >= 0){
       confirm("Wonderful, that is great to hear!");
-  } else if (greeting == "not so good" || greeting == "not so"){
+  } else if (negGreet.indexOf(greeting) >= 0){
       notSo = prompt("Do you want to talk about it?");
-      if (notSo == "no thanks" || notSo == "no" || notSo == "not really"){
+      if (negGreet.indexOf(notSo) >= 0){
           confirm("Alright, well, I hope the rest of your day turns out better!");
       } else {
           quiet = prompt("Shall we go somewhere private to talk then?");

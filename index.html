@@ -19,7 +19,7 @@
   /* visited link */ 
   a:visited {background-color:rgb(0, 189, 222);color:white;text-decoration:none;}
   /* mouse over link */
-  a:hover {font-size: 25px;}
+  a:hover {color: gray;}
   /* active link */
   a:active {background-color:rgb(0, 189, 222);color:white;text-decoration: none;}
 </style>
@@ -34,39 +34,33 @@
 </header>
 
 <nav style="text-align:center">
-  <div style="margin:10px;padding:8px;width:96.5%;">
+  <div id="nav" style="">
     <p style="text-align:center">Click on buttons!</p>
     <h3>(If Else)</h3>
   </div>
   <div style="margin:10px;padding:8px;width:96.5%;">
-    <button id="test" type="button" onclick="playBall()">Play Ball</button>
-    <button id="test" type="button" onclick="movies()">Movies</button>
-    <button id="test" type="button" onclick="time()">Time</button>
-    <button id="test" type="button" onclick="greeting()">Greeting</button>
-    <button id="test" type="button" onclick="number()">Number</button>
-    <button id="test" type="button" onclick="candybar()">Candy Bar</button>
+    <!-- <p id="test" type="button" onclick="playBall()">Play Ball</p> -->
+    <button id="space" type="button" onclick="playBall()"><a>Play Ball</a></button>
+    <button id="space" type="button" onclick="movies()"><a>Movies</a></button>
+    <button id="space" type="button" onclick="time()"><a>Time</a></button>
+    <button id="space" type="button" onclick="greeting()"><a>Greeting</a></button>
+    <button id="space" type="button" onclick="number()"><a>Number</a></button>
+    <button id="space" type="button" onclick="candybar()"><a>Candy Bar</a></button>
+    <button id="space" type="button" onclick="firearm()"><a>Firearm</a></button>
+    <button id="space" type="button" onclick="alarm()"><a>Alarm</a></button>
+    <button id="space" type="button" onclick="cookies()"><a>Cookies</a></button>
+    <button id="space" type="button" onclick="shoes()"><a>Shoes</a></button>
+    <button id="space" type="button" onclick="hungry()"><a>Hungry</a></button>
+    <button id="space" type="button" onclick="rockPaperScissors()"><a>RPS Game</a></button>
+    <button id="space" type="button" onclick="brokeDown()"><a>Flat Tire</a></button>
   </div>
-  <div style="margin:10px;padding:8px;width:96.5%;">  
-    <button id="test" type="button" onclick="firearm()">Firearm</button>
-    <button id="test" type="button" onclick="alarm()">Alarm</button>
-    <button id="test" type="button" onclick="cookies()">Cookies</button>
-    <button id="test" type="button" onclick="shoes()">Shoes</button>
-    <button id="test" type="button" onclick="hungry()">Hungry</button>
-    <button id="test" type="button" onclick="rockPaperScissors()">RPS Game</button>
-  </div>
-  <div style="margin:10px;padding:8px;width:96.5%;">
-    <button id="test" type="button" onclick="brokeDown()">Flat Tire</button>
-    <!-- <button id="test" type="button" onclick="movies()">Movies</button> -->
-    <!-- <button id="test" type="button" onclick="time()">Time</button> -->
-    <!-- <button id="test" type="button" onclick="greeting2()">Greeting</button> -->
-    <!-- <button id="test" type="button" onclick="number()">Number</button> -->
-    <!-- <button id="test" type="button" onclick="candybar()">Candy Bar</button> -->
-  </div>
+  
  
 </nav>
 
 <!--  FUNCTION HOW MANY -->
 <section id="grad2">
+  <div style="margin:5px;padding:8px;">
   <h2>Loops</h2>
   <div id="grad" style="">
     <h3>(For Loop)</h3>
@@ -115,7 +109,7 @@
     </form>
   </div>
 
-  <div id="grad">
+  <div id="grad" style="">
     <h3>(For Loop)</h3>
     <h2>Music</h2>
     <form name="selectForm3">
@@ -133,10 +127,11 @@
       <p><input id="btn3" type="button" value="How many selected?" /></p>
     </form>
   </div>
+  </div>
   
   <!--  NEW ROW, DO AND DO WHILE SECTION  -->
   
-  <div id="grad" style="">
+  <div id="grad" style="margin-left:48px">
     <h3>(Do and Do While Loops)</h3>
     <h2>Pick a Number</h2>
     <button type="button" onclick="pickAnumber()">Pick a number!</button>
