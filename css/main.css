@@ -14,7 +14,7 @@ nav {
   float:left;
   width: 98%;
   text-align: center;
-  border:1px solid black;
+  /*border:1px solid black;*/
 }
 
 #nav {
@@ -23,15 +23,17 @@ nav {
   width:96.5%;
 }
 
+nav ul {margin:0; padding:0;}
+
+nav ul li {display:inline; margin:5px;}
+
 section {margin:5px; padding:8px;float:left;width: 98%;text-align: center;}
 
 div {margin:5px; padding:8px;float:left;}
 
 footer {margin:5px; padding:8px;float:left;}
 
-nav ul {margin:0; padding:0;}
 
-nav ul li {display:inline; margin:5px;}
 
 section>h2 {text-align: center;}
 

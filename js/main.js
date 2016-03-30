@@ -132,7 +132,7 @@ function greeting(){
           confirm("Alright, well, I hope the rest of your day turns out better!");
       } else {
           quiet = prompt("Shall we go somewhere private to talk then?");
-          if (quiet == "sure" || quiet == "yes" || quiet == "yep"){
+          if (posGreet.indexOf(quiet) >= 0){
             confirm("Lead the way!");
           }
       }
@@ -334,54 +334,48 @@ function hungry(){
 
 /*  ROCK PAPER SCISSORS  */
 function rockPaperScissors(){
-var userChoice = prompt("Do you choose rock, paper or scissors?");
-userChoice = userChoice.toLowerCase();
+  var userChoice = prompt("Do you choose rock, paper or scissors?");
+  userChoice = userChoice.toLowerCase();
 
-var computerChoice = Math.random();
+  var computerChoice = Math.random();
     
-if(computerChoice<=0.34) {
-   computerChoice="rock";
-} else if (computerChoice>=0.67) {
-  computerChoice="paper";
-} else {
-  computerChoice="scissors";
-} alert("Computer: " + computerChoice);
-var choice1 = userChoice;
-var choice2 = computerChoice;
+  if(computerChoice<=0.34) {
+    computerChoice="rock";
+  } else if (computerChoice>=0.67) {
+    computerChoice="paper";
+  } else {
+    computerChoice="scissors";
+  } 
+  alert("Computer: " + computerChoice);
 
-var compare = function(choice1, choice2){
-if(choice1 === choice2) {
-    alert("The result is a tie!");
-} 
+  var choice1 = userChoice;
+  var choice2 = computerChoice;
 
-else if(choice1 === "rock") {
+  var compare = function(choice1, choice2){
+    if(choice1 === choice2) {
+      alert("The result is a tie!");
+    } else if(choice1 === "rock") {
     
-    if(choice2 === "scissors") {
-        alert("rock wins");
-    } 
-    else {
-        alert("paper wins");
+        if(choice2 === "scissors") {
+          alert("rock wins");
+        } else {
+          alert("paper wins");
+        } 
+    } else if (choice1 === "paper") {
+        if(choice2 === "rock") {
+          alert("paper wins");
+        } else {
+            alert("scissors wins");
+        }
+    } else if (choice1 === "scissors"){
+        if (choice2 === "rock"){
+          alert("rock wins");
+        } else {
+          alert("scissors wins");
+        }
     }
-} else if(choice1 === "paper") {
-    
-    if(choice2 === "rock") {
-        alert("paper wins");
-    } 
-    else {
-        alert("scissors wins");
-    }
-}
-
-else if (choice1 === "scissors"){
-  if (choice2 === "rock"){
-    alert("rock wins");
-} else {
-    alert("scissors wins");
   }
-}
-};
-
-compare(userChoice,computerChoice);
+  compare(userChoice,computerChoice);
 }
 
 
@@ -457,6 +451,7 @@ function countUp() {
         i++;
     } alert("Ready or not, here I come!!!");
 }
+
 
 
 
