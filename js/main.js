@@ -37,15 +37,22 @@
 
 /*  ASSIGNMENT FROM TYLER  there was a LOT of trial and error.  This is only showing what actually worked.  */
 
+var shortPosAnswers = ['yes', 'sure', 'Sure', 'yep', 'yepper'];
+var longPosAnswers = ['lets do it', 'im all for it', 'you betcha', 'sure thing'];
+var negAnswers = ['not sure', ];
+var answer1 = ['12am', '1am', '2am', '3am', '4am', '5am'];
+var answer2 = [, '6am', '7am'];
+var answer3 = ['8am', '9am', '10am','11am'];
+var posGreet = ['good', 'great thank you!', 'great'];
+
 function playBall(){
   var ball,
       typeOfBall;
 
   ball = prompt("Want to play ball, yes or no?");
   ball = ball.toLowerCase();
-  var positiveAnswer = ["yes", "sure", "yep", "yepper"];
-
-  if (positiveAnswer.indexOf()){
+  
+  if (positiveAnswers.indexOf() >= 0){
       typeOfBall = prompt("Basketball or Baseball?");
       typeOfBall = typeOfBall.toLowerCase();
       if (typeOfBall == "basketball"){
@@ -65,74 +72,59 @@ function playBall(){
 }
 
 /*  PRAC 2  */
-var posAnswers = ['yes', 'sure', 'yepper', 'lets do it', 'im all for it'];
+
 
 function movies(){
-  var useranswer1 = prompt("Would you like to go see the movie Star Wars tonight?");
-  useranswer1 = useranswer1.toLowerCase();
+  var useranswer = prompt("Would you like to go see Star Wars tonight?");
+  useranswer = useranswer.toLowerCase();
   
-
-  
-  if (useraswer1.indexOf(posAnswers) >= 0){
+  if (shortPosAnswers.indexOf(useranswer) >= 0){
     confirm("Awesome, I will get the tickets if you pay for popcorn!");
-  }  else if (useranswer1 == "no"){
+  }  else if (negAnswers.indexOf(useranswer) >= 0){
     confirm("ok, maybe next time then!");
-  } else if (useranswer1 == "you betcha"){
+  } else if (longPosAnswers.indexOf(useranswer) >= 0){
     confirm("ok, lets set a time!");
-  } else if (useranswer1 == "sure thing"){
+  } else if (longPosAnswers.indexOf(useranswer) >= 0){
     confirm("right on, i will get ready to go!");
-  } else if (useranswer1 == "not sure"){
+  } else if (negAnswers.indexOf(useranswer) >= 0){
     confirm("ok, well take some time to think about it and let me know.");
   } else {
-    confirm("i don't understand.")
+    confirm("i don't understand.");
   }
 }
 
 /*  PRAC 3  */
 
 function time(){
+  var tooEarly = "That is too early, go back to bed!"
   var early = "It is waaaaay too early, go back to sleep!!!";
   var thanks = "Thank you very much!";
   var useranswer2 = prompt("What time is it?");
+  useranswer2 = useranswer2.toLowerCase();
 
-  useranswer2 = useranswer2.toUpperCase();
-
-  var message = (useranswer2 == "1AM") ? early : thanks;
-  confirm(message)
+  var message = (useranswer2.indexOf(answer1)) ? tooEarly : thanks;
+  confirm(message);
 }
-/*  if (useranswer2 == "1AM"){
-        confirm("early");
-    } else {
-        confirm("thanks");
-    }
-}*/
 
-/*  PRAC 4  */
-
-/*function greeting(){
-  var useranswer3 = prompt("How are you doing today?");
-
-  useranswer3 = useranswer3.toUpperCase();
-
-  if (useranswer3 == "GREAT THANK YOU"){
-    confirm("Fabulous, that is great to hear!")
-  } else {
-    confirm("Keep on truckin!");
-  }
-}*/
 
 /*  PRAC 12 Nesting 2  */
 
-function greeting2(){
+
+
+
+
+
+
+function greeting(){
   var notSo,
       quiet;
 
   var greeting = prompt("Hello, how are you doing today, good great or not so good?");
   greeting = greeting.toLowerCase();
 
-  if (greeting == "good" || greeting == "great thank you!"){
+  if (posGreet.indexOf(greeting) >= 0){
       confirm("Good deal!");
-  } else if (greeting == "great"){
+  } else if (posGreet.indexOf(greeting) >= 0){
       confirm("Wonderful, that is great to hear!");
   } else if (greeting == "not so good" || greeting == "not so"){
       notSo = prompt("Do you want to talk about it?");
@@ -150,46 +142,51 @@ function greeting2(){
 }
 
 
-function brokeDown(){
-var response = prompt("Hello, it looks like you have a flat tire.  Can I help?");
-response = response.toLowerCase();
 
-if (response.indexOf(posAnswers) >= 0){
-  alert("Ok, I will grab my tire iron!");
-} else {
-  alert("Ok, good luck!");
-}
 
-}
+
+
+
+
+
+
 
 
 /*  PRAC 5  */
 
+/* SWITCH */
 function number(){
   var numb = prompt("Give me a number!");
-  if (numb == 1){
-    confirm("Hey, we are thinkin along the same line!");
-  } else if (numb == 2){
-    confirm("Hey that's the number I was thinking of!");
-  } else {
-    confirm("Darn, wasn't thinking of that number, you got me.");
+  
+  switch(numb) {
+    case "1":
+      alert("Hey, we are thinkin along the same line!");
+      break;
+    case "2":
+      alert("Hey that's the number I was thinking of!");
+      break;
+    default:
+      alert("Darn, wasn't thinking of that number, you got me.");
   }
 }
+
 
 
 /*  PRAC 6  */
 
 function candybar(){
   var candyBar = prompt("What is your favorite candy bar?")
+  candyBar = candyBar.toLowerCase();
 
-  candyBar = candyBar.toUpperCase();
-
-  if (candyBar == "SNICKERS"){
-    confirm("Those sure fill me up!");
-  } else if (candyBar == "MILKYWAY"){
-    confirm("Those are pretty good!");
-  } else {
-    confirm('Oh those are really yummy!');
+  switch(candyBar) {
+    case "snickers":
+      alert("Thos are good and filling!");
+      break;
+    case "milkyway":
+      alert("Very good, but almost a little too chocolaty for me sometimes.");
+      break;
+    default:
+      alert("Those are pretty good!");
   }
 }
 
@@ -335,37 +332,6 @@ function hungry(){
 
 
 
-
-/*  PRAC 13 FUNCTIONS  */
-
-
-/*function playBall2(){
-  var ball,
-  typeOfBall;
-
-  ball = prompt("Want to play ball, yes or no?");
-  ball = ball.toLowerCase();
-
-  if (ball == "yes"){
-      typeOfBall = prompt("Basketball or Baseball?");
-      typeOfBall = typeOfBall.toLowerCase();
-      if (typeOfBall == "basketball"){
-          game = prompt("One on One or Horse?")
-          game = game.toLowerCase();
-          if (game == "one on one"){
-              confirm("Let's flip a coin to see who goes first!");
-          } else {
-              confirm("Game on!");
-          }
-      } else if (typeOfBall == "baseball"){
-          confirm("Let's play catch!");
-      }
-  } else {
-      confirm("Maybe next time then!");
-  }
-}*/
-
-
 /*  ROCK PAPER SCISSORS  */
 function rockPaperScissors(){
 var userChoice = prompt("Do you choose rock, paper or scissors?");
@@ -418,10 +384,24 @@ else if (choice1 === "scissors"){
 compare(userChoice,computerChoice);
 }
 
-/*  ---------------INTRO TO LOOPS----------------  */
+
+function brokeDown(){
+var response = prompt("Hello, it looks like you have a flat tire.  Can I help?");
+response = response.toLowerCase();
+
+if (response.indexOf(posAnswers) >= 0){
+  alert("Ok, I will grab my tire iron!");
+} else {
+  alert("Ok, good luck!");
+}
+
+}
 
 
-/*  WEB PAGE ROW 1 -- CAMPING, BOM, MUSIC  */
+/*  --INTRO TO LOOPS-- */
+
+
+/*  --------WEB PAGE ROW 1 -- CAMPING SPOTS, BOOK OF MORMON, MUSIC-----------  */
 /*  FOR LOOPS  */
 
 
@@ -435,7 +415,10 @@ function howMany(selectObject) {
   return numberSelected;
 }
 
-/*  WEB PAGE ROW 2 -- COUNTDOWN, PICKANUMBER, COUNTUP  */
+
+
+
+/*  ----------WEB PAGE ROW 2  COUNTDOWN, PICKANUMBER, COUNTUP---------------  */
 /*  DO WHILE  */
 
 function countDown() {
@@ -497,7 +480,62 @@ do {
 alert("You got it dude!");
 }*/
 
-function isPosAnswer(){
+
+/*  if (useranswer2 == "1AM"){
+        confirm("early");
+    } else {
+        confirm("thanks");
+    }
+}*/
+
+/*  PRAC 4  */
+
+/*function greeting(){
+  var useranswer3 = prompt("How are you doing today?");
+
+  useranswer3 = useranswer3.toUpperCase();
+
+  if (useranswer3 == "GREAT THANK YOU"){
+    confirm("Fabulous, that is great to hear!")
+  } else {
+    confirm("Keep on truckin!");
+  }
+}*/
+
+/*  PRAC 13 FUNCTIONS  */
 
 
-}
+/*function playBall2(){
+  var ball,
+  typeOfBall;
+
+  ball = prompt("Want to play ball, yes or no?");
+  ball = ball.toLowerCase();
+
+  if (ball == "yes"){
+      typeOfBall = prompt("Basketball or Baseball?");
+      typeOfBall = typeOfBall.toLowerCase();
+      if (typeOfBall == "basketball"){
+          game = prompt("One on One or Horse?")
+          game = game.toLowerCase();
+          if (game == "one on one"){
+              confirm("Let's flip a coin to see who goes first!");
+          } else {
+              confirm("Game on!");
+          }
+      } else if (typeOfBall == "baseball"){
+          confirm("Let's play catch!");
+      }
+  } else {
+      confirm("Maybe next time then!");
+  }
+}*/
+
+
+/*function isPosAnswer(answer){
+  if (answer.indexOf(shortPosAnswers) >= 0){
+    return true;
+  } else {
+    return false;
+  }
+}*/
