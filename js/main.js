@@ -52,7 +52,7 @@ function playBall(){
   ball = prompt("Want to play ball, yes or no?");
   ball = ball.toLowerCase();
   
-  if (positiveAnswers.indexOf() >= 0){
+  if (shortPosAnswers.indexOf(ball) >= 0){
       typeOfBall = prompt("Basketball or Baseball?");
       typeOfBall = typeOfBall.toLowerCase();
       if (typeOfBall == "basketball"){
