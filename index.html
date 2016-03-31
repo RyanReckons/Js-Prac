@@ -41,19 +41,21 @@
   </div>
   <div style="margin:10px;padding:8px;width:96.5%;">
     <!-- <p id="test" type="button" onclick="playBall()">Play Ball</p> -->
-    <button id="space" type="button" onclick="playBall()"><a>Play Ball</a></button>
-    <button id="space" type="button" onclick="movies()"><a>Movies</a></button>
-    <button id="space" type="button" onclick="time()"><a>Time</a></button>
-    <button id="space" type="button" onclick="greeting()"><a>Greeting</a></button>
-    <button id="space" type="button" onclick="number()"><a>Number</a></button>
-    <button id="space" type="button" onclick="candybar()"><a>Candy Bar</a></button>
-    <button id="space" type="button" onclick="firearm()"><a>Firearm</a></button>
-    <button id="space" type="button" onclick="alarm()"><a>Alarm</a></button>
-    <button id="space" type="button" onclick="cookies()"><a>Cookies</a></button>
-    <button id="space" type="button" onclick="shoes()"><a>Shoes</a></button>
-    <button id="space" type="button" onclick="hungry()"><a>Hungry</a></button>
-    <button id="space" type="button" onclick="rockPaperScissors()"><a>RPS Game</a></button>
-    <button id="space" type="button" onclick="brokeDown()"><a>Flat Tire</a></button>
+    <button id="nav-btn-space" type="button" onclick="playBall()"><a>Play Ball</a></button>
+    <button id="nav-btn-space" type="button" onclick="movies()"><a>Movies</a></button>
+    <button id="nav-btn-space" type="button" onclick="time()"><a>Time</a></button>
+    <button id="nav-btn-space" type="button" onclick="greeting()"><a>Greeting</a></button>
+    <button id="nav-btn-space" type="button" onclick="number()"><a>Number</a></button>
+    <button id="nav-btn-space" type="button" onclick="candybar()"><a>Candy Bar</a></button>
+    <button id="nav-btn-space" type="button" onclick="firearm()"><a>Firearm</a></button>
+  </div>
+  <div id="rotate" style="margin:10px;padding:8px;width:96.5%;">
+    <button id="nav-btn-space" type="button" onclick="alarm()"><a>Alarm</a></button>
+    <button id="nav-btn-space" type="button" onclick="cookies()"><a>Cookies</a></button>
+    <button id="nav-btn-space" type="button" onclick="shoes()"><a>Shoes</a></button>
+    <button id="nav-btn-space" type="button" onclick="hungry()"><a>Hungry</a></button>
+    <button id="nav-btn-space" type="button" onclick="rockPaperScissors()"><a>RPS Game</a></button>
+    <button id="nav-btn-space" type="button" onclick="brokeDown()"><a>Flat Tire</a></button>
     <!-- <button id="space" type="button" onclick="makeCall()"><a>Make a Call</a></button> -->
   </div>
   
@@ -61,198 +63,113 @@
 </nav>
 
 <!--  FUNCTION HOW MANY -->
-<section id="grad2">
+<section id="grad">
+  <div style="width:96.5%;text-align:center;">
+    <h2>Loops</h2>
+  </div>
+  <!-- ROW ONE -->
   <div style="margin:5px;padding:8px;">
-  <h2>Loops</h2>
-  <div id="grad" style="">
-    <h3>(For Loop)</h3>
-    <h2>Camping Spots</h2>
-    <form name="selectForm1">
-      <p>
-        <label for="campSpots">Choose a camping sopt,<br>then click the button below:</label><br>
-        <select id="camping" name="camping" multiple="multiple">
-          <option selected="selected">Mountains</option>
-          <option>Desert</option>
-          <option>Midwest</option>
-          <option>Beach</option>
-          <option>Campgrounds</option>
-          <option>Backyard</option>
-        </select>
-      </p>
-      <p><input id="btn1" type="button" value="How many are selected?" /></p>
-    </form>
-  </div>
+    <div id="grad2" style="">
+      <h3>(For Loop)</h3>
+      <h2>Camping Spots</h2>
+      <form name="selectForm1">
+        <p>
+          <label for="campSpots">Choose a camping sopt,<br>then click the button below:</label><br>
+          <select id="camping" name="camping" multiple="multiple">
+            <option selected="selected">Mountains</option>
+            <option>Desert</option>
+            <option>Midwest</option>
+            <option>Beach</option>
+            <option>Campgrounds</option>
+            <option>Backyard</option>
+          </select>
+        </p>
+        <p><input id="btn1" type="button" value="How many are selected?" /></p>
+      </form>
+    </div>
 
-  <div id="grad">
-    <h3>(For Loop)</h3>
-    <h2>Book of Mormon</h2>
-    <form name="selectForm2">
-      <p>
-        <label for="bookOfMorm">Choose your prophet,<br>then click the button below:</label><br>
-        <select id="prophets" name="prophets" multiple="multiple">
-          <option selected="selected">1 Nephi</option>
-          <option>2 Nephi</option>
-          <option>Jacob</option>
-          <option>Enos</option>
-          <option>Jarom</option>
-          <option>Omni</option>
-          <option>Words of Mormon</option>
-          <option>Mosiah</option>
-          <option>Alma</option>
-          <option>Helaman</option>
-          <option>3 Nephi</option>
-          <option>4 Nephi</option>
-          <option>Mormon</option>
-          <option>Ether</option>
-          <option>Moroni</option>
-        </select>
-      </p>
-      <p><input id="btn2" type="button" value="How many selected?" /></p>
-    </form>
-  </div>
+    <div id="grad2">
+      <h3>(For Loop)</h3>
+      <h2>Book of Mormon</h2>
+      <form name="selectForm2">
+        <p>
+          <label for="bookOfMorm">Choose your prophet,<br>then click the button below:</label><br>
+          <select id="prophets" name="prophets" multiple="multiple">
+            <option selected="selected">1 Nephi</option>
+            <option>2 Nephi</option>
+            <option>Jacob</option>
+            <option>Enos</option>
+            <option>Jarom</option>
+            <option>Omni</option>
+            <option>Words of Mormon</option>
+            <option>Mosiah</option>
+            <option>Alma</option>
+            <option>Helaman</option>
+            <option>3 Nephi</option>
+            <option>4 Nephi</option>
+            <option>Mormon</option>
+            <option>Ether</option>
+            <option>Moroni</option>
+          </select>
+        </p>
+        <p><input id="btn2" type="button" value="How many selected?" /></p>
+      </form>
+    </div>
 
-  <div id="grad" style="">
-    <h3>(For Loop)</h3>
-    <h2>Music</h2>
-    <form name="selectForm3">
-      <p>
-        <label for="musicTypes">Choose some music types,<br>then click the button below:</label><br>
-        <select id="musicTypes" name="musicTypes" multiple="multiple">
-          <option selected="selected">R&B</option>
-          <option>Jazz</option>
-          <option>Blues</option>
-          <option>New Age</option>
-          <option>Classical</option>
-          <option>Opera</option>
-        </select>
-      </p>
-      <p><input id="btn3" type="button" value="How many selected?" /></p>
-    </form>
+    <div id="grad2" style="">
+      <h3>(For Loop)</h3>
+      <h2>Music</h2>
+      <form name="selectForm3">
+        <p>
+          <label for="musicTypes">Choose some music types,<br>then click the button below:</label><br>
+          <select id="musicTypes" name="musicTypes" multiple="multiple">
+            <option selected="selected">R&B</option>
+            <option>Jazz</option>
+            <option>Blues</option>
+            <option>New Age</option>
+            <option>Classical</option>
+            <option>Opera</option>
+          </select>
+        </p>
+        <p><input id="btn3" type="button" value="How many selected?" /></p>
+      </form>
+    </div>
   </div>
-  </div>
-  
-  <!--  NEW ROW, DO AND DO WHILE SECTION  -->
-  
-  <div id="grad" style="margin-left:48px">
+  <!--  ROW TWO , DO AND DO WHILE SECTION  -->
+  <div id="grad2" style="margin-left:48px">
     <h3>(Do and Do While Loops)</h3>
     <h2>Pick a Number</h2>
-    <button type="button" onclick="pickAnumber()">Pick a number!</button>
-    <!--form name="selectForm4">
-      <p>
-        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
-        <select id="newName4" name="newName4" multiple="multiple">
-          <option selected="selected">Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-      </p>
-      <p><input id="btn4" type="button" value="How many selected?" /></p>
-    </form-->
+    <button type="button" onclick="pickAnumber()"><a>Pick a number!</a></button>
   </div>
 
-  <div id="grad" style="">
+  <div id="grad2" style="">
     <h3>(Do and Do While Loops)</h3>
     <h2>Count Down</h2>
-    <button type="button" onclick="countDown()">Click for Count!</button>
-    <!--form name="selectForm5">
-      <p>
-        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
-        <select id="newName5" name="newName5" multiple="multiple">
-          <option selected="selected">Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-      </p>
-      <p><input id="btn5" type="button" value="How many selected?" /></p>
-    </form-->
+    <button type="button" onclick="countDown()"><a>Click for Count!</a></button>
   </div>
 
-  <div id="grad" style="">
+  <div id="grad2" style="">
     <h3>(Do and Do While Loops)</h3>
     <h2>Count to 10</h2>
-    <button type="button" onclick="countUp()">Click for Count!</button>
-    <!--form name="selectForm6">
-      <p>
-        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
-        <select id="newName6" name="newName6" multiple="multiple">
-          <option selected="selected">Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-      </p>
-      <p><input id="btn6" type="button" value="How many selected?" /></p>
-    </form-->
+    <button type="button" onclick="countUp()"><a>Click for Count!</a></button>
   </div>
-
-  <!--  NEW ROW, MORE LOOPS  LABEL STATEMENTS  -->
-  
-  <div id="grad" style="">
+  <!--  ROW THREE , MORE LOOPS  LABEL STATEMENTS  -->
+  <div id="grad2" style="margin-left:48px">
     <h3>(Label Statement)</h3>
     <h2>Heading</h2>
-    <button type="button" onclick="myFunction()">Button</button>
-    <!--form name="selectForm4">
-      <p>
-        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
-        <select id="newName4" name="newName4" multiple="multiple">
-          <option selected="selected">Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-      </p>
-      <p><input id="btn4" type="button" value="How many selected?" /></p>
-    </form-->
+    <button type="button" onclick="myFunction()"><a>Button</a></button>
   </div>
 
-  <div id="grad" style="">
+  <div id="grad2" style="">
     <h3>(Label Statement)</h3>
     <h2>Heading</h2>
-    <button type="button" onclick="myFunction()">Button</button>
-    <!--form name="selectForm5">
-      <p>
-        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
-        <select id="newName5" name="newName5" multiple="multiple">
-          <option selected="selected">Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-      </p>
-      <p><input id="btn5" type="button" value="How many selected?" /></p>
-    </form-->
+    <button type="button" onclick="myFunction()"><a>Button</a></button>
   </div>
 
-  <div id="grad" style="">
+  <div id="grad2" style="">
     <h3>(Label Statement)</h3>
     <h2>Heading</h2>
-    <button type="button" onclick="myFunction()">Button</button>
-    <!--form name="selectForm6">
-      <p>
-        <label for="newFor">Choose an option,<br>then click the button below:</label><br>
-        <select id="newName6" name="newName6" multiple="multiple">
-          <option selected="selected">Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-      </p>
-      <p><input id="btn6" type="button" value="How many selected?" /></p>
-    </form-->
+    <button type="button" onclick="myFunction()"><a>Button</a></button>
   </div>
 </section>
 
@@ -262,19 +179,19 @@
 
 <script>
   var btn1 = document.getElementById("btn1");
-btn1.addEventListener("click", function(){
-  confirm('Number of options selected: ' + howMany(document.selectForm1.camping))
-});
+      btn1.addEventListener("click", function(){
+        confirm('Number of options selected: ' + howMany(document.selectForm1.camping))
+  });
 
-var btn2 = document.getElementById("btn2");
-btn2.addEventListener("click", function(){
-  confirm('Number of options selected: ' + howMany(document.selectForm2.prophets))
-});
+  var btn2 = document.getElementById("btn2");
+      btn2.addEventListener("click", function(){
+        confirm('Number of options selected: ' + howMany(document.selectForm2.prophets))
+  });
 
-var btn3 = document.getElementById("btn3");
-btn3.addEventListener("click", function(){
-  confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
-});
+  var btn3 = document.getElementById("btn3");
+      btn3.addEventListener("click", function(){
+        confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
+  });
 
 /*var btn4 = document.getElementById("btn4");
 btn4.addEventListener("click", function(){
