@@ -453,84 +453,38 @@ function countUp() {
 }
 
 
+/* ult todo */
+$(document).ready(function(){
+  $("form#main_input_box").submit(function(event){
+    event.preventDefault(); 
+    var deleteButton = "<button class='delete btn btn-warning'>Delete</button>"; 
+    var editButton = "<button class='edit btn btn-success'>Edit</button>"; 
+    var twoButtons = "<div class='btn-group pull-right'>" + deleteButton + editButton + "</div>"; 
+    var checkBox = "<div class='checkbox'><label><input type='checkbox' class='pull-right'></label></div>"; 
+    $(".list_of_items").append("<li class='list-group-item'>" + "<div class='text_holder'>" + $("#custom_textbox").val() + twoButtons + "</div>" + checkBox + "</li>"); 
+    $("#custom_textbox").val(''); 
+  }); 
 
+  $(".list_of_items").on("click", "button.delete", function(){ 
+    $(this).closest("li").remove(); 
+  }); 
 
-/*  WEB PAGE ROW 3  */
+  $(".list_of_items").on("click", "button.edit", function (){ 
+    var editItemBox = "<form class='edit_input_box'><input type='text' class='itembox'></form>"; 
+    var originalItem = $(this).parent().val(); 
+    var deleteButton = "<button class='delete btn btn-warning'>Delete</button>"; 
+    var editButton = "<button class='edit btn btn-success'>Edit</button>"; 
+    var twoButtons = "<div class='btn-group pull-right'>" + deleteButton + editButton + "</div>"; 
+    $(this).closest("div.text_holder").replaceWith(editItemBox); 
+    $("form.edit_input_box ").on("submit", function(){ 
+      event.preventDefault();  
+      var checkBox = "<label><input type='checkbox'></label>"; 
+      $(this).replaceWith("<div>" + $(".itembox").val() + twoButtons + "</div>"); 
+    });  
+  }); 
 
-/*function pickColor(){
-attempts = 0;
-
-do { 
-
-    if (attempts == 0) {
-        promptMessage = "Try and guess my favorite color!"; 
-    } else{
-        promptMessage = "Try again!";
-    };
-     
-    user = prompt(promptMessage);
-    attempts++;
-} while(user != lighblue && attempts <= 3)
-
-alert("You got it dude!");
-}*/
-
-
-/*  if (useranswer2 == "1AM"){
-        confirm("early");
-    } else {
-        confirm("thanks");
-    }
-}*/
-
-/*  PRAC 4  */
-
-/*function greeting(){
-  var useranswer3 = prompt("How are you doing today?");
-
-  useranswer3 = useranswer3.toUpperCase();
-
-  if (useranswer3 == "GREAT THANK YOU"){
-    confirm("Fabulous, that is great to hear!")
-  } else {
-    confirm("Keep on truckin!");
-  }
-}*/
-
-/*  PRAC 13 FUNCTIONS  */
-
-
-/*function playBall2(){
-  var ball,
-  typeOfBall;
-
-  ball = prompt("Want to play ball, yes or no?");
-  ball = ball.toLowerCase();
-
-  if (ball == "yes"){
-      typeOfBall = prompt("Basketball or Baseball?");
-      typeOfBall = typeOfBall.toLowerCase();
-      if (typeOfBall == "basketball"){
-          game = prompt("One on One or Horse?")
-          game = game.toLowerCase();
-          if (game == "one on one"){
-              confirm("Let's flip a coin to see who goes first!");
-          } else {
-              confirm("Game on!");
-          }
-      } else if (typeOfBall == "baseball"){
-          confirm("Let's play catch!");
-      }
-  } else {
-      confirm("Maybe next time then!");
-  }
-}*/
-
-
-/*function isPosAnswer(answer){
-  if (answer.indexOf(shortPosAnswers) >= 0){
-    return true;
-  } else {
-    return false;
-  }
-}*/
+  $(".list_of_items").on("click", ":checkbox", function (){ 
+    $(this).closest("li").toggleClass("completed_item"); 
+  }); 
+}); 
+/* ult todo */

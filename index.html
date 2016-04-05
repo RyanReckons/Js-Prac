@@ -5,7 +5,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery(1).js"></script> -->
 <script type="text/javascript" src="js/main.js"></script>
 
 <!--[if lt IE 9]>
@@ -63,13 +67,13 @@
 </nav>
 
 <!--  FUNCTION HOW MANY -->
-<section id="grad">
-  <div style="width:96.5%;text-align:center;">
+<section id="grad" style="margin-left:15px;">
+  <div style="width:96.5%;text-align:center;float:left;">
     <h2>Loops</h2>
   </div>
   <!-- ROW ONE -->
-  <div style="margin:5px;padding:8px;">
-    <div id="grad2" style="">
+  <div style="margin-left:140px;padding:8px;float:left;">
+    <div id="grad2" style="margin:5px; padding:8px;float:left;height:280px;">
       <h3>(For Loop)</h3>
       <h2>Camping Spots</h2>
       <form name="selectForm1">
@@ -88,7 +92,7 @@
       </form>
     </div>
 
-    <div id="grad2">
+    <div id="grad2" style="margin:5px; padding:8px;float:left;height:280px;">
       <h3>(For Loop)</h3>
       <h2>Book of Mormon</h2>
       <form name="selectForm2">
@@ -116,7 +120,7 @@
       </form>
     </div>
 
-    <div id="grad2" style="">
+    <div id="grad2" style="margin:5px; padding:8px;float:left;height:280px;">
       <h3>(For Loop)</h3>
       <h2>Music</h2>
       <form name="selectForm3">
@@ -136,41 +140,42 @@
     </div>
   </div>
   <!--  ROW TWO , DO AND DO WHILE SECTION  -->
-  <div id="grad2" style="margin-left:48px">
-    <h3>(Do and Do While Loops)</h3>
-    <h2>Pick a Number</h2>
-    <button type="button" onclick="pickAnumber()"><a>Pick a number!</a></button>
-  </div>
+  <div style="margin-left:140px;padding:8px;float:left;">
+    <div id="grad2" style="margin-left:48px;margin:5px; padding:8px;float:left;">
+      <h3>(Do and Do While Loops)</h3>
+      <h2>Pick a Number</h2>
+      <button type="button" onclick="pickAnumber()"><a>Pick a number!</a></button>
+    </div>
 
-  <div id="grad2" style="">
-    <h3>(Do and Do While Loops)</h3>
-    <h2>Count Down</h2>
-    <button type="button" onclick="countDown()"><a>Click for Count!</a></button>
-  </div>
+    <div id="grad2" style="margin:5px; padding:8px;float:left;">
+      <h3>(Do and Do While Loops)</h3>
+      <h2>Count Down</h2>
+      <button type="button" onclick="countDown()"><a>Click for Count!</a></button>
+    </div>
 
-  <div id="grad2" style="">
-    <h3>(Do and Do While Loops)</h3>
-    <h2>Count to 10</h2>
-    <button type="button" onclick="countUp()"><a>Click for Count!</a></button>
+    <div id="grad2" style="margin:5px; padding:8px;float:left;">
+      <h3>(Do and Do While Loops)</h3>
+      <h2>Count to 10</h2>
+      <button type="button" onclick="countUp()"><a>Click for Count!</a></button>
+    </div>
   </div>
-  <!--  ROW THREE , MORE LOOPS  LABEL STATEMENTS  -->
-  <div id="grad2" style="margin-left:48px">
-    <h3>(Label Statement)</h3>
-    <h2>Heading</h2>
-    <button type="button" onclick="myFunction()"><a>Button</a></button>
-  </div>
+  <!--  ROW THREE, MORE LOOPS  LABEL STATEMENTS  -->
+  <!-- <div style="margin-left:140px;padding:8px;float:left;"> -->
+    <div style="margin:5px; padding:8px;text-align:center;float:left;margin-left:310px;" class="container" id="main">
+      <h1>RyanReckons To-Do List</h1>
+      <form role="form" id="main_input_box">
+        <label>
+          <input type="text" class ="form-control" id="custom_textbox" name="Item" placeholder="Type to do's here!">
+          <input type="submit" value="Add" class="btn btn-primary add_button">
+        </label>
+      </form>
+      <form>
+        <ol class="list-group list_of_items">
+        </ol>
+      </form> 
+    </div>
+  <!-- </div> -->
 
-  <div id="grad2" style="">
-    <h3>(Label Statement)</h3>
-    <h2>Heading</h2>
-    <button type="button" onclick="myFunction()"><a>Button</a></button>
-  </div>
-
-  <div id="grad2" style="">
-    <h3>(Label Statement)</h3>
-    <h2>Heading</h2>
-    <button type="button" onclick="myFunction()"><a>Button</a></button>
-  </div>
 </section>
 
 <footer>
@@ -192,6 +197,16 @@
       btn3.addEventListener("click", function(){
         confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
   });
+
+$(document).ready(function(){
+    $("#input").onkeypress(function(){
+        $("ul-list").append(" <li>Appended text</li>.");
+    });
+
+    $("#btn2").onkeypress(function(){
+        $("ol").append("<li>Appended item</li>");
+    });
+});
 
 /*var btn4 = document.getElementById("btn4");
 btn4.addEventListener("click", function(){
