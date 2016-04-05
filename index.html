@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Javascript Practice</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <title>Javascript Practice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery(1).js"></script> -->
-<script type="text/javascript" src="js/main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery(1).js"></script> -->
+  <script type="text/javascript" src="js/main.js"></script>
 
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-</script>
-<![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
 
-<style>
-  /* for all links on this page of code */
-  a:link {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 15px;text-decoration: none;}
-  /* visited link */ 
-  a:visited {background-color:rgb(0, 189, 222);color:white;text-decoration:none;}
-  /* mouse over link */
-  a:hover {color: gray;}
-  /* active link */
-  a:active {background-color:rgb(0, 189, 222);color:white;text-decoration: none;}
-</style>
+  <style>
+    /* for all links on this page of code */
+    a:link {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 15px;text-decoration: none;}
+    /* visited link */ 
+    a:visited {background-color:rgb(0, 189, 222);color:white;text-decoration:none;}
+    /* mouse over link */
+    a:hover {color: gray;}
+    /* active link */
+    a:active {background-color:rgb(0, 189, 222);color:white;text-decoration: none;}
+  </style>
 
 
 </head>
@@ -35,138 +36,143 @@
 
 <header>
   <img src="img/js-logo.jpg" width="200" height="75">
-  <!-- <h1>Javascript</h1> -->
 </header>
 
-<nav style="text-align:center">
-  <div id="nav" style="">
-    <p style="text-align:center">Click on buttons!</p>
-    <h3>(If Else)</h3>
-  </div>
-  <div style="margin:10px;padding:8px;width:96.5%;">
-    <!-- <p id="test" type="button" onclick="playBall()">Play Ball</p> -->
-    <button id="nav-btn-space" type="button" onclick="playBall()"><a>Play Ball</a></button>
-    <button id="nav-btn-space" type="button" onclick="movies()"><a>Movies</a></button>
-    <button id="nav-btn-space" type="button" onclick="time()"><a>Time</a></button>
-    <button id="nav-btn-space" type="button" onclick="greeting()"><a>Greeting</a></button>
-    <button id="nav-btn-space" type="button" onclick="number()"><a>Number</a></button>
-    <button id="nav-btn-space" type="button" onclick="candybar()"><a>Candy Bar</a></button>
-    <button id="nav-btn-space" type="button" onclick="firearm()"><a>Firearm</a></button>
-  </div>
-  <div id="rotate" style="margin:10px;padding:8px;width:96.5%;">
-    <button id="nav-btn-space" type="button" onclick="alarm()"><a>Alarm</a></button>
-    <button id="nav-btn-space" type="button" onclick="cookies()"><a>Cookies</a></button>
-    <button id="nav-btn-space" type="button" onclick="shoes()"><a>Shoes</a></button>
-    <button id="nav-btn-space" type="button" onclick="hungry()"><a>Hungry</a></button>
-    <button id="nav-btn-space" type="button" onclick="rockPaperScissors()"><a>RPS Game</a></button>
-    <button id="nav-btn-space" type="button" onclick="brokeDown()"><a>Flat Tire</a></button>
-    <!-- <button id="space" type="button" onclick="makeCall()"><a>Make a Call</a></button> -->
-  </div>
+<nav class="row" style="margin:5px;padding:8px;float:left;width:98%;text-align:center;border:1px solid rgb(0, 219, 255);">
   
- 
+  <!-- <div class="col-sm-10"> -->
+    <div id="nav" style="">
+      <p style="text-align:center">Click on buttons!</p>
+      <h3>(If Else)</h3>
+    </div>
+    <ul style="margin:10px;padding:8px;width:96.5%;margin-left:100px;">
+      <li class="button" id="nav-btn-space" type="button" onclick="playBall()"><a>Play Ball</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="movies()"><a>Movies</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="time()"><a>Time</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="greeting()"><a>Greeting</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="number()"><a>Number</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="candybar()"><a>Candy Bar</a></li>
+    </ul>
+  <!-- </div> -->
+  
 </nav>
 
 <!--  FUNCTION HOW MANY -->
-<section id="grad" style="margin-left:15px;">
+<section class="row" id="grad" style="float:left;margin-left:12px;">
   <div style="width:96.5%;text-align:center;float:left;">
-    <h2>Loops</h2>
+      <h2>Loops</h2>
+    </div>
+  <div class="col-sm-2">
+    <ul id="rotate" style="margin:5px;padding:8px;width:96.5%;margin-left:-20px;">
+      <li class="button" id="nav-btn-space" type="button" onclick="alarm()"><a>Alarm</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="cookies()"><a>Cookies</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="shoes()"><a>Shoes</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="hungry()"><a>Hungry</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="rockPaperScissors()"><a>RPS Game</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="brokeDown()"><a>Flat Tire</a></li>
+      <li class="button" id="nav-btn-space" type="button" onclick="firearm()"><a>Firearm</a></li>
+    </ul>
   </div>
-  <!-- ROW ONE -->
-  <div style="margin-left:140px;padding:8px;float:left;">
-    <div id="grad2" style="margin:5px; padding:8px;float:left;height:280px;">
-      <h3>(For Loop)</h3>
-      <h2>Camping Spots</h2>
-      <form name="selectForm1">
-        <p>
-          <label for="campSpots">Choose a camping sopt,<br>then click the button below:</label><br>
-          <select id="camping" name="camping" multiple="multiple">
-            <option selected="selected">Mountains</option>
-            <option>Desert</option>
-            <option>Midwest</option>
-            <option>Beach</option>
-            <option>Campgrounds</option>
-            <option>Backyard</option>
-          </select>
-        </p>
-        <p><input id="btn1" type="button" value="How many are selected?" /></p>
-      </form>
-    </div>
+  <div class="col-sm-10">
+    
+    <!-- ROW ONE -->
+    <div style="margin-left:-40px;padding:8px;float:left;">
+      <div id="grad2" style="margin:5px; padding:8px;float:left;">
+        <h3>(For Loop)</h3>
+        <h2>Camping Spots</h2>
+        <form name="selectForm1">
+          <p>
+            <label for="campSpots">Choose a camping sopt,<br>then click the button below:</label><br>
+            <select id="camping" name="camping" multiple="multiple">
+              <option selected="selected">Mountains</option>
+              <option>Desert</option>
+              <option>Midwest</option>
+              <option>Beach</option>
+              <option>Campgrounds</option>
+              <option>Backyard</option>
+            </select>
+          </p><br>
+          <p><input id="btn1" type="button" value="How many are selected?" /></p>
+        </form>
+      </div>
 
-    <div id="grad2" style="margin:5px; padding:8px;float:left;height:280px;">
-      <h3>(For Loop)</h3>
-      <h2>Book of Mormon</h2>
-      <form name="selectForm2">
-        <p>
-          <label for="bookOfMorm">Choose your prophet,<br>then click the button below:</label><br>
-          <select id="prophets" name="prophets" multiple="multiple">
-            <option selected="selected">1 Nephi</option>
-            <option>2 Nephi</option>
-            <option>Jacob</option>
-            <option>Enos</option>
-            <option>Jarom</option>
-            <option>Omni</option>
-            <option>Words of Mormon</option>
-            <option>Mosiah</option>
-            <option>Alma</option>
-            <option>Helaman</option>
-            <option>3 Nephi</option>
-            <option>4 Nephi</option>
-            <option>Mormon</option>
-            <option>Ether</option>
-            <option>Moroni</option>
-          </select>
-        </p>
-        <p><input id="btn2" type="button" value="How many selected?" /></p>
-      </form>
-    </div>
+      <div id="grad2" style="margin:5px; padding:8px;float:left;">
+        <h3>(For Loop)</h3>
+        <h2>Book of Mormon</h2>
+        <form name="selectForm2">
+          <p>
+            <label for="bookOfMorm">Choose your prophet,<br>then click the button below:</label><br>
+            <select id="prophets" name="prophets" multiple="multiple">
+              <option selected="selected">1 Nephi</option>
+              <option>2 Nephi</option>
+              <option>Jacob</option>
+              <option>Enos</option>
+              <option>Jarom</option>
+              <option>Omni</option>
+              <option>Words of Mormon</option>
+              <option>Mosiah</option>
+              <option>Alma</option>
+              <option>Helaman</option>
+              <option>3 Nephi</option>
+              <option>4 Nephi</option>
+              <option>Mormon</option>
+              <option>Ether</option>
+              <option>Moroni</option>
+            </select>
+          </p>
+          <p><input id="btn2" type="button" value="How many selected?" /></p>
+        </form>
+      </div>
 
-    <div id="grad2" style="margin:5px; padding:8px;float:left;height:280px;">
-      <h3>(For Loop)</h3>
-      <h2>Music</h2>
-      <form name="selectForm3">
-        <p>
-          <label for="musicTypes">Choose some music types,<br>then click the button below:</label><br>
-          <select id="musicTypes" name="musicTypes" multiple="multiple">
-            <option selected="selected">R&B</option>
-            <option>Jazz</option>
-            <option>Blues</option>
-            <option>New Age</option>
-            <option>Classical</option>
-            <option>Opera</option>
-          </select>
-        </p>
-        <p><input id="btn3" type="button" value="How many selected?" /></p>
-      </form>
+      <div id="grad2" style="margin:5px; padding:8px;float:left;">
+        <h3>(For Loop)</h3>
+        <h2>Music</h2>
+        <form name="selectForm3">
+          <p>
+            <label for="musicTypes">Choose some music types,<br>then click the button below:</label><br>
+            <select id="musicTypes" name="musicTypes" multiple="multiple">
+              <option selected="selected">R&B</option>
+              <option>Jazz</option>
+              <option>Blues</option>
+              <option>New Age</option>
+              <option>Classical</option>
+              <option>Opera</option>
+            </select>
+          </p><br>
+          <p><input id="btn3" type="button" value="How many selected?" /></p>
+        </form>
+      </div>
     </div>
   </div>
   <!--  ROW TWO , DO AND DO WHILE SECTION  -->
-  <div style="margin-left:140px;padding:8px;float:left;">
-    <div id="grad2" style="margin-left:48px;margin:5px; padding:8px;float:left;">
+  <div class="row" style="margin-left:-25px;padding:8px;float:left;">
+    <div class="col-sm-4" id="grad2" style="margin:5px;margin:5px; padding:8px;float:left;">
       <h3>(Do and Do While Loops)</h3>
       <h2>Pick a Number</h2>
-      <button type="button" onclick="pickAnumber()"><a>Pick a number!</a></button>
+      <button class="button2" type="button" onclick="pickAnumber()"><a>Pick a number!</a></button>
     </div>
 
-    <div id="grad2" style="margin:5px; padding:8px;float:left;">
+    <div class="col-sm-4" id="grad2" style="margin:5px; padding:8px;float:left;">
       <h3>(Do and Do While Loops)</h3>
       <h2>Count Down</h2>
-      <button type="button" onclick="countDown()"><a>Click for Count!</a></button>
+      <button class="button2" type="button" onclick="countDown()"><a>Click for Count!</a></button>
     </div>
 
-    <div id="grad2" style="margin:5px; padding:8px;float:left;">
+    <div class="col-sm-4" id="grad2" style="margin:5px; padding:8px;float:left;">
       <h3>(Do and Do While Loops)</h3>
       <h2>Count to 10</h2>
-      <button type="button" onclick="countUp()"><a>Click for Count!</a></button>
+      <button class="button2" type="button" onclick="countUp()"><a>Click for Count!</a></button>
     </div>
   </div>
   <!--  ROW THREE, MORE LOOPS  LABEL STATEMENTS  -->
   <!-- <div style="margin-left:140px;padding:8px;float:left;"> -->
-    <div style="margin:5px; padding:8px;text-align:center;float:left;margin-left:310px;" class="container" id="main">
-      <h1>RyanReckons To-Do List</h1>
+  <div class="row">
+    <div class="col-sm-12" style="margin:5px; padding:8px;float:left;margin-left:41%;" class="container" id="main">
+      <h1>RyanReckons<br><small style="color:black">To-Do's!</small></h1>
       <form role="form" id="main_input_box">
-        <label>
-          <input type="text" class ="form-control" id="custom_textbox" name="Item" placeholder="Type to do's here!">
-          <input type="submit" value="Add" class="btn btn-primary add_button">
+        <label style="">
+          <input  style="margin-left:50px;" type="text" class ="form-control" id="custom_textbox" name="Item" placeholder="Type to do's here!">
+          <input  style="margin-left:50px;" type="submit" value="Add" class="btn btn-primary add_button">
         </label>
       </form>
       <form>
@@ -174,7 +180,7 @@
         </ol>
       </form> 
     </div>
-  <!-- </div> -->
+  </div>
 
 </section>
 
