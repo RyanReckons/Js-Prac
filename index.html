@@ -4,6 +4,7 @@
   <title>Javascript Practice</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -166,13 +167,30 @@
   </div>
   <!--  ROW THREE, MORE LOOPS  LABEL STATEMENTS  -->
   <!-- <div style="margin-left:140px;padding:8px;float:left;"> -->
-  <div class="row">
+  <div class="container" id="main" style="margin:5px; padding:8px;float:left;margin-left:41%;">
+    <h1>Ultimate To-Do List</h1>
+    <form role ="form" id="main_input_box">
+      <label>
+        <input type="text" class ="form-control" id="custom_textbox" name="Item" placeholder="What do you need to do?">
+        <input type="submit" value="Add" class="btn btn-primary add_button">
+      </label>
+    </form>
+    <form>
+      <ol class="list-group list_of_items">
+      </ol>
+    </form>
+  </div>
+
+
+
+
+  <!--div class="row">
     <div class="col-sm-12" style="margin:5px; padding:8px;float:left;margin-left:41%;" class="container" id="main">
       <h1>RyanReckons<br><small style="color:black">To-Do's!</small></h1>
       <form role="form" id="main_input_box">
         <label style="">
-          <input  style="margin-left:50px;" type="text" class ="form-control" id="custom_textbox" name="Item" placeholder="Type to do's here!">
-          <input  style="margin-left:50px;" type="submit" value="Add" class="btn btn-primary add_button">
+          <input  id="inp-1" type="text" class ="form-control" id="custom_textbox" name="Item" placeholder="Type to do's here!">
+          <input  id="inp-2" type="submit" value="Add" class="btn btn-primary add_button">
         </label>
       </form>
       <form>
@@ -180,7 +198,7 @@
         </ol>
       </form> 
     </div>
-  </div>
+  </div-->
 
 </section>
 

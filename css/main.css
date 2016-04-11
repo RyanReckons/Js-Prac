@@ -48,6 +48,10 @@ div>h2 {text-align: center}
   /*float:left;*/
 
 }
+#camping {margin-top:10px;width:295px;}
+#prophets {margin-top:10px;width:295px;}
+#musicTypes {margin-top:10px;width:295px;}
+/*#selection {margin-top:10px;width:100px;}*/
 
 .button {
   background-color: rgb(0, 219, 255); 
@@ -90,17 +94,7 @@ div>h2 {text-align: center}
   margin-left:-8px;
   padding:8px;
 }
-/*#btn-2 {
-  background-color:rgb(236, 240, 238);
-  color:rgb(160, 160, 160);
-  padding:8px;
-  
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  width: 150px;
-  border-bottom: 2px solid white;
-}*/
+
 #input {
   width:200px;
   height:25px;
@@ -122,13 +116,18 @@ div>h2 {text-align: center}
 }
 
 /*ult todo */
+/*#inp-1 {margin-left:50px;}*/
+/*#inp-2 {margin-left:50px;}*/
+/*.center {}*/
 .form-control {
   display: inline-block; 
   /*text-align: center;*/
+  margin-left: 40px;
+  background-color: white;
 } 
 
 .add_button { 
-  margin: 10px 0px 10px 0px; 
+  margin: 10px 0px 10px 40px; 
 } 
 
 .checkbox { 
@@ -170,10 +169,8 @@ body {
 } 
 /* ult todo */
 
-#camping {margin-top:10px;width:295px;}
-#prophets {margin-top:10px;width:295px;}
-#musicTypes {margin-top:10px;width:295px;}
-/*#selection {margin-top:10px;width:100px;}*/
+
+
 
 footer {margin:5px; padding:8px;float:left;}
 #allRights {color:rgb(0, 189, 222);}
