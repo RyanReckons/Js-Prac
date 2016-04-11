@@ -82,6 +82,7 @@ header img {
     display: none;
     position: relative;
     height: 340px;
+    position: absolute;
     /*margin-top: -15px;*/
 }
 /* dropdown */
