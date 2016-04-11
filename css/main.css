@@ -100,7 +100,7 @@ header img {
 /*section {margin:5px; padding:8px;float:left;width: 98%;}*/
 section>h2 {text-align: center;}
 /*section>h1 {text-align: center;}*/
-div>h2 {text-align: center}
+div>h2, h3 {text-align: center}
 #grad {
   background: rgb(215, 219, 243); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(rgb(215, 219, 243), white); /* For Safari 5.1 to 6.0 */
@@ -188,18 +188,16 @@ label {text-align: center;}
 }
 
 /*ult todo */
-/*#inp-1 {margin-left:50px;}*/
-/*#inp-2 {margin-left:50px;}*/
-/*.center {}*/
+
 .form-control {
   display: inline-block; 
-  /*text-align: center;*/
-  margin-left: 40px;
+  /*width:100%;*/
   background-color: white;
+  /*padding-left: 10px;*/
 } 
 
 .add_button { 
-  margin: 10px 0px 10px 40px; 
+  /*margin: 10px 0px 10px 10px; */
 } 
 
 .checkbox { 
@@ -211,7 +209,7 @@ label {text-align: center;}
 } 
 
 h1 { 
-  /*display: inline-block; */
+ 
   color: #292b33;
   text-align: center; 
 } 

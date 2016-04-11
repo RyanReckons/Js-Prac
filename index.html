@@ -207,10 +207,14 @@
         <div  id="grad2">
           <h1>Ultimate To-Do List</h1>
           <form role ="form" id="main_input_box">
-            <label>
-              <input type="text" class ="form-control" id="custom_textbox" name="Item" placeholder="What do you need to do?">
-              <input type="submit" value="Add" class="btn btn-primary add_button">
-            </label>
+            <div class="row">
+              <div class="col-sm-12">
+                <!-- <label> -->
+                  <input style="width:100%;" type="text" class="form-control" id="custom_textbox" name="Item" placeholder="What do you need to do?">
+                  <input type="submit" value="Add" class="btn btn-primary add_button">
+                <!-- </label> -->
+              </div>
+            </div>
           </form>
           <form>
             <ol class="list-group list_of_items">
@@ -239,8 +243,9 @@
 
   var btn3 = document.getElementById("btn3");
       btn3.addEventListener("click", function(){
-        confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
+      confirm('Number of options selected: ' + howMany(document.selectForm3.musicTypes))
   });
+
 
 /*$(document).ready(function(){
     $("#input").onkeypress(function(){

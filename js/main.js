@@ -45,6 +45,8 @@ var answer2 = [, '6am', '7am'];
 var answer3 = ['8am', '9am', '10am','11am'];
 var posGreet = ['good', 'great thank you!', 'great'];
 
+
+
 function playBall(){
   var ball,
       typeOfBall;
@@ -489,9 +491,9 @@ $(document).ready(function(){
 }); 
 /* ult todo */
 /*value='' */
-
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#panel").slideToggle("fast");
     });
 });
+
