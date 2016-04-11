@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="js/jquery(1).js"></script> -->
   <script type="text/javascript" src="js/main.js"></script>
 
   <!--[if lt IE 9]>
@@ -35,28 +35,43 @@
 
 <body>
 
-<header>
-  <img src="img/js-logo.jpg" width="200" height="75">
+<header class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="img/js-logo.jpg" width="200" height="75">
+    </div>
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+      <div id="flip">If Else Statements</div>
+      <div id="panel">
+        <ul style="width:96.5%;margin-left:-70px;">
+          <li class="button" id="nav-btn-space" type="button" onclick="playBall()"><a>Play Ball</a></li>
+          <li class="button" id="nav-btn-space" type="button" onclick="movies()"><a>Movies</a></li>
+          <li class="button" id="nav-btn-space" type="button" onclick="time()"><a>Time</a></li>
+          <li class="button" id="nav-btn-space" type="button" onclick="greeting()"><a>Greeting</a></li>
+          <li class="button" id="nav-btn-space" type="button" onclick="number()"><a>Number</a></li>
+          <li class="button" id="nav-btn-space" type="button" onclick="candybar()"><a>Candy Bar</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
 
-<nav class="row" style="margin:5px;padding:8px;float:left;width:98%;text-align:center;border:1px solid rgb(0, 219, 255);">
-  
-  <!-- <div class="col-sm-10"> -->
-    <div id="nav" style="">
-      <p style="text-align:center">Click on buttons!</p>
-      <h3>(If Else)</h3>
-    </div>
-    <ul style="margin:10px;padding:8px;width:96.5%;margin-left:100px;">
-      <li class="button" id="nav-btn-space" type="button" onclick="playBall()"><a>Play Ball</a></li>
-      <li class="button" id="nav-btn-space" type="button" onclick="movies()"><a>Movies</a></li>
-      <li class="button" id="nav-btn-space" type="button" onclick="time()"><a>Time</a></li>
-      <li class="button" id="nav-btn-space" type="button" onclick="greeting()"><a>Greeting</a></li>
-      <li class="button" id="nav-btn-space" type="button" onclick="number()"><a>Number</a></li>
-      <li class="button" id="nav-btn-space" type="button" onclick="candybar()"><a>Candy Bar</a></li>
-    </ul>
-  <!-- </div> -->
-  
-</nav>
+<!--nav class="row" style="margin:5px;padding:8px;float:left;width:98%;text-align:center;border:1px solid rgb(0, 219, 255);">
+  <div id="nav" style="">
+    <p style="text-align:center">Click on buttons!</p>
+    <h3>(If Else)</h3>
+  </div>
+  <ul style="margin:10px;padding:8px;width:96.5%;margin-left:100px;">
+    <li class="button" id="nav-btn-space" type="button" onclick="playBall()"><a>Play Ball</a></li>
+    <li class="button" id="nav-btn-space" type="button" onclick="movies()"><a>Movies</a></li>
+    <li class="button" id="nav-btn-space" type="button" onclick="time()"><a>Time</a></li>
+    <li class="button" id="nav-btn-space" type="button" onclick="greeting()"><a>Greeting</a></li>
+    <li class="button" id="nav-btn-space" type="button" onclick="number()"><a>Number</a></li>
+    <li class="button" id="nav-btn-space" type="button" onclick="candybar()"><a>Candy Bar</a></li>
+  </ul>
+</nav-->
 
 <!--  FUNCTION HOW MANY -->
 <section class="row" id="grad" style="float:left;margin-left:12px;">

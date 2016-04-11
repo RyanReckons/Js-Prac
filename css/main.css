@@ -1,4 +1,13 @@
-body {font-family: Verdana, sans-serif; font-size:0.8em;}
+/* for animate */
+/* W3.CSS 1.67 by J.E.Refsnes. Do not remove this line. */
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body {font-family: Verdana, sans-serif; font-size:0.8em;margin:0}
+article,aside,details,figcaption,figure,header,footer,hgroup,main,menu,nav,section,summary
+{display:block}
+/* for animate */
+
 
 /*div {margin:5px; padding:8px;float:left;}*/
 p {display:inline;margin:5px; padding:8px;}
@@ -11,7 +20,71 @@ header {
   text-align: center;
 }
 
+/*animate*/
+header img {
+  text-align: center;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    /*width: 170px;*/
+    /*height: 160px;*/
+    /*background-color: #006CB0;    */
+    background: transparent;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    /*0%   {background-color:#006CB0; left:1500px; top:0px;}*/
+    0%   {background:transparent; left:1500px; top:0px;}
+    /*50%  {background-color:#006CB0; left:-50px; top:0px;}*/
+    50%  {background:transparent; left:-50px; top:0px;}
+    /*100%  {background-color:#006CB0; left:0px; top:0px;}*/
+    100%  {background:transparent; left:0px; top:0px;}
+    /*50%  {background-color:blue; left:200px; top:200px;}*/
+    /*75%  {background-color:green; left:0px; top:200px;}*/
+    /*100% {background-color:red; left:0px; top:0px;}*/
+}
 
+/* Standard syntax */
+@keyframes example {
+    /*0%   {background-color:#006CB0; left:1500px; top:0px;}*/
+    0%   {background:transparent; left:1500px; top:0px;}
+    /*50%  {background-color:#006CB0; left:-50px; top:0px;}*/
+    50%  {background:transparent; left:-50px; top:0px;}
+    /*100%  {background-color:#006CB0; left:0px; top:0px;}*/
+    100%  {background:transparent; left:0px; top:0px;}
+    /*50%  {background-color:blue; left:200px; top:200px;}*/
+    /*75%  {background-color:green; left:0px; top:200px;}*/
+    /*100% {background-color:red; left:0px; top:0px;}*/
+}
+/*animate*/
+
+/* dropdown */
+#flip {background-color: rgb(0, 219, 255);cursor: pointer;}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    /*border: solid 1px #c3c3c3;*/
+    border: 1px solid white;
+}
+
+#panel {
+    padding-top: 5px;
+    padding-left: 50px;
+    display: none;
+    position: relative;
+    height: 340px;
+    /*margin-top: -15px;*/
+}
+/* dropdown */
 
 #nav {
   margin:10px;
