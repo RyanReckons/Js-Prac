@@ -463,7 +463,10 @@ $(document).ready(function(){
     var editButton = "<button class='edit btn btn-success'>Edit</button>"; 
     var twoButtons = "<div class='btn-group pull-right'>" + deleteButton + editButton + "</div>"; 
     var checkBox = "<div class='checkbox'><label><input type='checkbox' class='pull-right'></label></div>"; 
-    $(".list_of_items").append("<li class='list-group-item'>" + "<div class='text_holder'>" + $("#custom_textbox").val() + twoButtons + "</div>" + checkBox + "</li>"); 
+    
+    $(".list_of_items").append(
+      "<li id='item' class='list-group-item'>" + "<div class='text_holder'>" + $("#custom_textbox").val() + 
+      twoButtons + "</div>" + checkBox + "</li>"); 
     $("#custom_textbox").val(''); 
   }); 
 
@@ -472,11 +475,18 @@ $(document).ready(function(){
   }); 
 
   $(".list_of_items").on("click", "button.edit", function (){ 
-    var editItemBox = "<form class='edit_input_box'><input type='text' class='itembox'></form>"; 
+    
+    // var orginalValue = document.getElementById('whatevertheidoftheLIis').innerHTML;
+    var orginalValue = document.getElementById('#item').innerHTML;
+    var editItemBox = "<form class='edit_input_box'><input type='text' value='' class='itembox'></form>"; 
     var originalItem = $(this).parent().val(); 
     var deleteButton = "<button class='delete btn btn-warning'>Delete</button>"; 
     var editButton = "<button class='edit btn btn-success'>Edit</button>"; 
-    var twoButtons = "<div class='btn-group pull-right'>" + deleteButton + editButton + "</div>"; 
+    var twoButtons = "<div class='btn-group pull-right'>" + deleteButton + editButton + "</div>";
+
+   
+ 
+    
     $(this).closest("div.text_holder").replaceWith(editItemBox); 
     $("form.edit_input_box ").on("submit", function(){ 
       event.preventDefault();  
@@ -490,6 +500,10 @@ $(document).ready(function(){
   }); 
 }); 
 /* ult todo */
+
+
+
+
 /*value='' */
 $(document).ready(function(){
     $("#flip").click(function(){
