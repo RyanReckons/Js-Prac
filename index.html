@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   
   <!-- New links below this line -->
-  <link id="ui-theme" rel="stylesheet" href="https://code.jquery.com/ui/1.10.0/themes/ui-lightness/jquery-ui.css">
+  <!-- <link id="ui-theme" rel="stylesheet" href="https://code.jquery.com/ui/1.10.0/themes/ui-lightness/jquery-ui.css"> -->
+  <link id="ui-theme" rel="stylesheet" href="css/jquery-ui.css">
   <!-- <link rel="stylesheet" href="./scripts/jui_theme_switch/jquery.jui_theme_switch.css"> -->
   <link rel="stylesheet" href="scripts/jui_theme_switch/jquery.jui_theme_switch.css">
   <!-- New links above this line -->
@@ -21,7 +22,8 @@
   <script type="text/javascript" src="js/main.js"></script>
   
   <!-- New script below this line -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- // <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery2.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <!-- // <script type="text/javascript" src="./scripts/jui_theme_switch/jquery.jui_theme_switch.min.js"></script> -->
   <script type="text/javascript" src="scripts/jui_theme_switch/jquery.jui_theme_switch.min.js"></script>
@@ -36,6 +38,7 @@
   <![endif]-->
 
   <style>
+
     /* for all links on this page of code */
     a:link {background-color:rgb(0, 189, 222);color:white;padding:5px;margin-left: 15px;text-decoration: none;}
     /* visited link */ 
@@ -238,7 +241,7 @@
       </div>
       <div class="col-sm-4">
         <div  id="grad2">
-          <div>
+          <div style="">
               <div id="theme_switcher"></div>
           </div>
           <div id="demo" style="width: 100%;"></div>
@@ -278,9 +281,10 @@
 
         $("#demo").todoList({
             items: [
-                'todo 1',
-                'todo 2',
-                'do something do something do something do something do something do something '
+
+                // 'todo 1',
+                // 'todo 2',
+                // 'do something do something do something do something do something do something '
             ]
         });
 
